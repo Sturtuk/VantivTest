@@ -36,6 +36,7 @@
  *   Last Update : 15 June 2017 Version 4.2
  *   Last Update : 28 August 2017 Version 4.3
  ***********************************************************/
+require_once 'vendor/autoload.php';
 
 define('YII_ENABLE_ERROR_HANDLER', false);
 define('YII_ENABLE_EXCEPTION_HANDLER', false);

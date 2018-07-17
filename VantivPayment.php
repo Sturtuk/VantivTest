@@ -1,56 +1,57 @@
 <?php
 require_once 'vendor/autoload.php';
 
+
+use Symfony\Component\HttpFoundation\Request;
+use litle\sdk\XmlParser;
 /**
 * @author Edwin Sturt
 */
 class VantivPay
 {
 	var $sale_info = [];
+	var $saleResponse;
 
-	function __construct($argument)
-	{
-		
-	}
-	public function PaymentData($data = ''){
+	public function PaymentData(Request $request){
 		$sale_info = [
-		     	 'id' => $data[''],
-	             'orderId' => $data[''],
-	             'amount'  => $data[''],
+		     	 'orderId' => $request->get('first_name'),
+	             'amount'  => $request->get('first_name'),
 	             'orderSource' => 'ecommerce',
 	             'billToAddress' => 
 	             		 [
-				             'name' 			=>  $data[''],
-				             'addressLine1' 	=>  $data[''],
-				             'city' 			=>  $data[''],
-				             'state' 			=>  $data[''],
-				             'zip' 				=>  $data[''],
-				             'country' 			=> 	$data['']
+				             'name' 			=>  $request->get('first_name'),
+				             'addressLine1' 	=>  $request->get('first_name'),
+				             'city' 			=>  $request->get('first_name'),
+				             'state' 			=>  $request->get('first_name'),
+				             'zip' 				=>  $request->get('first_name'),
+				             'country' 			=> 	$request->get('first_name')
 				         ],
 				'card' => 
 				         [
-				             'number' => $data[''],
-				             'expDate' => $data[''],
-				             'cardValidationNum' => $data[''],
-				             'type' => $data['']
+				             'number' => $request->get('first_name'),
+				             'expDate' => $request->get('first_name'),
+				             'cardValidationNum' => $request->get('first_name'),
+				             'type' => $request->get('first_name')
 				         ]
 	            ];
+        $initialize = new litle\sdk\LitleOnlineRequest();
+        $this->saleResponse =$initialize->saleRequest($sale_info);
 	            
 		return $this;
 
 	}
 	public function ProcessPayment(){
-		
-				$initialize = new litle\sdk\LitleOnlineRequest();
-				$saleResponse =$initialize->saleRequest($sale_info);
-				#display results
-				echo ("Response: " . (litle\sdk\XmlParser::getNode($saleResponse,'response')) . "<br>");
-				echo ("Message: " . litle\sdk\XmlParser::getNode($saleResponse,'message') . "<br>");
-				echo ("Vantiv eCommerce Transaction ID: " . litle\sdk\XmlParser::getNode($saleResponse,'litleTxnId'));
+				$response = (XmlParser::getNode($this->saleResponse,'response'));
+				$message = XmlParser::getNode($this->saleResponse,'message');
+				echo ("Vantiv eCommerce Transaction ID: " . XmlParser::getNode($this->saleResponse,'litleTxnId'));
 	}
 
-	public function processPay($data ){
+	public function processPay(){
+
 	    $this->PaymentData()->ProcessPayment();
     }
 }
+
+$App = new VantivPay();
+
 

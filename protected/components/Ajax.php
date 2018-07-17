@@ -3647,7 +3647,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	{
 		//dump($this->data);
 		
-		
+		print_r($_SESSION);
 		$mtid=$_SESSION['kr_merchant_id'];
 			    
 	    if ( $this->data['delivery_type']=="delivery"){
