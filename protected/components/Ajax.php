@@ -3672,9 +3672,9 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                 ]
         ];
 
-        print_r($this->httpPost("http://c41673.takeoutlist.com/Ptest.php",$sale_info));
 
-       // $VApp->PaymentData($sale_info);
+
+        $VApp->PaymentData($sale_info);
 
     }
 
