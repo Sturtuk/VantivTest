@@ -4,7 +4,7 @@
     <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="3673" column="0" lean-forward="true" selection-start-line="3673" selection-start-column="0" selection-end-line="3673" selection-end-column="0" />
+            <state relative-caret-position="355">
+              <caret line="3669" column="57" lean-forward="false" selection-start-line="3669" selection-start-column="56" selection-end-line="3669" selection-end-column="57" />
               <folding>
                 <element signature="e#44#3225#0#PHP" expanded="false" />
                 <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -210,11 +210,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="532">
+              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -296,9 +296,9 @@
         <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
         <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
         <option value="$PROJECT_DIR$/VantivPayment.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Ptest.php" />
         <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -511,13 +511,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00008" summary="Oops Enabled">
-      <created>1531832575965</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1531832575965</updated>
     </task>
     <task id="LOCAL-00009" summary="Oops Enabled">
       <created>1531832666145</created>
@@ -855,11 +848,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531839851514</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Payment Done">
+      <created>1531839890256</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1531839890256</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10800000" />
+    <option name="totallyTimeSpent" value="10829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1338,14 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ptest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1364,8 +1356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="3673" column="0" lean-forward="true" selection-start-line="3673" selection-start-column="0" selection-end-line="3673" selection-end-column="0" />
+        <state relative-caret-position="355">
+          <caret line="3669" column="57" lean-forward="false" selection-start-line="3669" selection-start-column="56" selection-end-line="3669" selection-end-column="57" />
           <folding>
             <element signature="e#44#3225#0#PHP" expanded="false" />
             <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -1542,6 +1534,14 @@
             <marker date="1531839880461" expanded="true" signature="138238:138588" ph="SELECT SQL_C... " />
             <marker date="1531839880461" expanded="true" signature="141087:141238" ph="SELECT SQL_C... ${$sTable}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
