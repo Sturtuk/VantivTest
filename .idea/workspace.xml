@@ -5,8 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VantivPayment.php" afterPath="$PROJECT_DIR$/VantivPayment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/store-v3.js" afterPath="$PROJECT_DIR$/assets/js/store-v3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/rzr-init.php" afterPath="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="1689" column="13" lean-forward="true" selection-start-line="1689" selection-start-column="13" selection-end-line="1689" selection-end-column="13" />
+            <state relative-caret-position="291">
+              <caret line="1678" column="31" lean-forward="true" selection-start-line="1678" selection-start-column="31" selection-end-line="1678" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -40,8 +38,8 @@
       <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="3652" column="48" lean-forward="false" selection-start-line="3652" selection-start-column="40" selection-end-line="3652" selection-end-column="48" />
+            <state relative-caret-position="562">
+              <caret line="3674" column="20" lean-forward="false" selection-start-line="3674" selection-start-column="20" selection-end-line="3674" selection-end-column="20" />
               <folding>
                 <element signature="e#44#3225#0#PHP" expanded="false" />
                 <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -389,11 +387,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VantivPayment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="420">
+              <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -467,8 +465,8 @@
         <option value="$PROJECT_DIR$/protected/components/ScriptManagerCompress.php" />
         <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
         <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
-        <option value="$PROJECT_DIR$/VantivPayment.php" />
         <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
+        <option value="$PROJECT_DIR$/VantivPayment.php" />
       </list>
     </option>
   </component>
@@ -716,13 +714,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00016" summary="Autoload Register">
-      <created>1531833331725</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1531833331725</updated>
     </task>
     <task id="LOCAL-00017" summary="Autoload Register">
       <created>1531833438806</created>
@@ -1060,11 +1051,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531840852475</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Payment Done">
+      <created>1531841238532</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1531841238532</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12095000" />
+    <option name="totallyTimeSpent" value="12212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1551,10 +1549,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="1678" column="31" lean-forward="true" selection-start-line="1678" selection-start-column="31" selection-end-line="1678" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="3652" column="48" lean-forward="false" selection-start-line="3652" selection-start-column="40" selection-end-line="3652" selection-end-column="48" />
+        <state relative-caret-position="562">
+          <caret line="3674" column="20" lean-forward="false" selection-start-line="3674" selection-start-column="20" selection-end-line="3674" selection-end-column="20" />
           <folding>
             <element signature="e#44#3225#0#PHP" expanded="false" />
             <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -1736,16 +1742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VantivPayment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="1689" column="13" lean-forward="true" selection-start-line="1689" selection-start-column="13" selection-end-line="1689" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding />
         </state>
       </provider>

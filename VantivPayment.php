@@ -11,6 +11,8 @@ class VantivPay
 
 	public function PaymentData(array $data){
 
+	    print_r($data);
+
         $initialize = new litle\sdk\LitleOnlineRequest();
         $saleResponse =   $initialize->authorizationRequest($data);
 
