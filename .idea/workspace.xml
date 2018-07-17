@@ -4,7 +4,6 @@
     <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="3673" column="8" lean-forward="false" selection-start-line="3673" selection-start-column="8" selection-end-line="3673" selection-end-column="28" />
+            <state relative-caret-position="412">
+              <caret line="3672" column="0" lean-forward="true" selection-start-line="3672" selection-start-column="0" selection-end-line="3672" selection-end-column="0" />
               <folding>
                 <element signature="e#43#3224#0#PHP" expanded="false" />
                 <element signature="e#3228#9025#0#PHP" expanded="false" />
@@ -885,11 +884,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531836528746</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Check Payment">
+      <created>1531836662720</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1531836662720</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7600000" />
+    <option name="totallyTimeSpent" value="7696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1379,8 +1385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="3673" column="8" lean-forward="false" selection-start-line="3673" selection-start-column="8" selection-end-line="3673" selection-end-column="28" />
+        <state relative-caret-position="412">
+          <caret line="3672" column="0" lean-forward="true" selection-start-line="3672" selection-start-column="0" selection-end-line="3672" selection-end-column="0" />
           <folding>
             <element signature="e#43#3224#0#PHP" expanded="false" />
             <element signature="e#3228#9025#0#PHP" expanded="false" />
