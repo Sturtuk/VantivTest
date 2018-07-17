@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="Payment Done">
+    <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/store-v3.js" afterPath="$PROJECT_DIR$/assets/js/store-v3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/rzr-init.php" afterPath="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="1722" column="0" lean-forward="true" selection-start-line="1722" selection-start-column="0" selection-end-line="1722" selection-end-column="0" />
+            <state relative-caret-position="591">
+              <caret line="1829" column="21" lean-forward="true" selection-start-line="1829" selection-start-column="21" selection-end-line="1829" selection-end-column="21" />
               <folding>
                 <element signature="e#42807#42843#0" expanded="false" />
                 <element signature="e#42887#43356#0" expanded="false" />
@@ -225,11 +223,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rzr-init.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rzr-init.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="344">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -279,9 +277,9 @@
         <option value="$PROJECT_DIR$/protected/components/ScriptManagerCompress.php" />
         <option value="$PROJECT_DIR$/VantivPayment.php" />
         <option value="$PROJECT_DIR$/protected/views/store/payment-option.php" />
-        <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
         <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
         <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
+        <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
       </list>
     </option>
   </component>
@@ -529,13 +527,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00022" summary="JS update">
-      <created>1531834634082</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1531834634082</updated>
     </task>
     <task id="LOCAL-00023" summary="Check Payment">
       <created>1531834687391</created>
@@ -873,11 +864,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531841920856</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="CC Validation">
+      <created>1531849040187</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1531849040187</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13625000" />
+    <option name="totallyTimeSpent" value="13905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -918,7 +916,8 @@
     <MESSAGE value="JS update" />
     <MESSAGE value="Check Payment" />
     <MESSAGE value="Payment Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Payment Done" />
+    <MESSAGE value="CC Validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="CC Validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1216,17 +1215,6 @@
         <state relative-caret-position="846">
           <caret line="581" column="70" lean-forward="false" selection-start-line="581" selection-start-column="56" selection-end-line="581" selection-end-column="70" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="1722" column="0" lean-forward="true" selection-start-line="1722" selection-start-column="0" selection-end-line="1722" selection-end-column="0" />
-          <folding>
-            <element signature="e#42807#42843#0" expanded="false" />
-            <element signature="e#42887#43356#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1568,13 +1556,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="344">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="1829" column="21" lean-forward="true" selection-start-line="1829" selection-start-column="21" selection-end-line="1829" selection-end-column="21" />
+          <folding>
+            <element signature="e#42807#42843#0" expanded="false" />
+            <element signature="e#42887#43356#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -1718,6 +1718,7 @@ $(window).scroll(function(e){
 			  } 
 			});
 
+(function(){var t,e,n,r,a,i,o,l,u,c,h,s,p,f,g,d,v,m,y,C,T,w,$,D,S=[].slice,k=[].indexOf||function(t){for(var e=0,n=this.length;e<n;e++)if(e in this&&this[e]===t)return e;return-1};(t=window.jQuery||window.Zepto||window.$).payment={},t.payment.fn={},t.fn.payment=function(){var e,n;return n=arguments[0],e=2<=arguments.length?S.call(arguments,1):[],t.payment.fn[n].apply(this,e)},a=/(\d{1,4})/g,t.payment.cards=r=[{type:"visaelectron",pattern:/^4(026|17500|405|508|844|91[37])/,format:a,length:[16,17,18,19],cvcLength:[3],luhn:!0},{type:"maestro",pattern:/^(5(018|0[23]|[68])|6(39|7))/,format:a,length:[12,13,14,15,16,17,18,19],cvcLength:[3],luhn:!0},{type:"forbrugsforeningen",pattern:/^600/,format:a,length:[16,17,18,19],cvcLength:[3],luhn:!0},{type:"dankort",pattern:/^5019/,format:a,length:[16,17,18,19],cvcLength:[3],luhn:!0},{type:"visa",pattern:/^4/,format:a,length:[13,14,15,16,17,18,19],cvcLength:[3],luhn:!0},{type:"mastercard",pattern:/^(5[1-5]|2[2-7])/,format:a,length:[16,17,18,19],cvcLength:[3],luhn:!0},{type:"amex",pattern:/^3[47]/,format:/(\d{1,4})(\d{1,6})?(\d{1,5})?/,length:[15,16,17,18,19],cvcLength:[3,4],luhn:!0},{type:"dinersclub",pattern:/^3[0689]/,format:/(\d{1,4})(\d{1,6})?(\d{1,4})?/,length:[14,15,16,17,18,19],cvcLength:[3],luhn:!0},{type:"discover",pattern:/^6([045]|22)/,format:a,length:[16,17,18,19],cvcLength:[3],luhn:!0},{type:"unionpay",pattern:/^(62|88)/,format:a,length:[16,17,18,19],cvcLength:[3],luhn:!1},{type:"jcb",pattern:/^35/,format:a,length:[16,17,18,19],cvcLength:[3],luhn:!0}],e=function(t){var e,n,a;for(t=(t+"").replace(/\D/g,""),n=0,a=r.length;n<a;n++)if((e=r[n]).pattern.test(t))return e},n=function(t){var e,n,a;for(n=0,a=r.length;n<a;n++)if((e=r[n]).type===t)return e},p=function(t){var e,n,r,a,i,o;for(r=!0,a=0,i=0,o=(n=(t+"").split("").reverse()).length;i<o;i++)e=n[i],e=parseInt(e,10),(r=!r)&&(e*=2),e>9&&(e-=9),a+=e;return a%10==0},s=function(t){var e;return null!=t.prop("selectionStart")&&t.prop("selectionStart")!==t.prop("selectionEnd")||!(null==("undefined"!=typeof document&&null!==document&&null!=(e=document.selection)?e.createRange:void 0)||!document.selection.createRange().text)},$=function(t,e){var n,r;try{n=e.prop("selectionStart")}catch(t){t,n=null}if(r=e.val(),e.val(t),null!==n&&e.is(":focus"))return n===r.length&&(n=t.length),e.prop("selectionStart",n),e.prop("selectionEnd",n)},m=function(t){var e,n,r,a,i,o,l,u;for(null==t&&(t=""),r="０１２３４５６７８９",a="0123456789",o="",l=0,u=(n=t.split("")).length;l<u;l++)e=n[l],(i=r.indexOf(e))>-1&&(e=a[i]),o+=e;return o},v=function(e){return setTimeout(function(){var n,r;return r=(n=t(e.currentTarget)).val(),r=(r=m(r)).replace(/\D/g,""),$(r,n)})},g=function(e){return setTimeout(function(){var n,r;return r=(n=t(e.currentTarget)).val(),r=m(r),r=t.payment.formatCardNumber(r),$(r,n)})},l=function(n){var r,a,i,o,l,u,c;if(i=String.fromCharCode(n.which),/^\d+$/.test(i)&&(r=t(n.currentTarget),c=r.val(),a=e(c+i),o=(c.replace(/\D/g,"")+i).length,u=16,a&&(u=a.length[a.length.length-1]),!(o>=u||null!=r.prop("selectionStart")&&r.prop("selectionStart")!==c.length)))return(l=a&&"amex"===a.type?/^(\d{4}|\d{4}\s\d{6})$/:/(?:^|\s)(\d{4})$/).test(c)?(n.preventDefault(),setTimeout(function(){return r.val(c+" "+i)})):l.test(c+i)?(n.preventDefault(),setTimeout(function(){return r.val(c+i+" ")})):void 0},i=function(e){var n,r;if(n=t(e.currentTarget),r=n.val(),8===e.which&&(null==n.prop("selectionStart")||n.prop("selectionStart")===r.length))return/\d\s$/.test(r)?(e.preventDefault(),setTimeout(function(){return n.val(r.replace(/\d\s$/,""))})):/\s\d?$/.test(r)?(e.preventDefault(),setTimeout(function(){return n.val(r.replace(/\d$/,""))})):void 0},d=function(e){return setTimeout(function(){var n,r;return r=(n=t(e.currentTarget)).val(),r=m(r),r=t.payment.formatExpiry(r),$(r,n)})},u=function(e){var n,r,a;if(r=String.fromCharCode(e.which),/^\d+$/.test(r))return n=t(e.currentTarget),a=n.val()+r,/^\d$/.test(a)&&"0"!==a&&"1"!==a?(e.preventDefault(),setTimeout(function(){return n.val("0"+a+" / ")})):/^\d\d$/.test(a)?(e.preventDefault(),setTimeout(function(){return n.val(a+" / ")})):void 0},c=function(e){var n,r,a;if(r=String.fromCharCode(e.which),/^\d+$/.test(r))return a=(n=t(e.currentTarget)).val(),/^\d\d$/.test(a)?n.val(a+" / "):void 0},h=function(e){var n,r,a;if("/"===(a=String.fromCharCode(e.which))||" "===a)return r=(n=t(e.currentTarget)).val(),/^\d$/.test(r)&&"0"!==r?n.val("0"+r+" / "):void 0},o=function(e){var n,r;if(n=t(e.currentTarget),r=n.val(),8===e.which&&(null==n.prop("selectionStart")||n.prop("selectionStart")===r.length))return/\d\s\/\s$/.test(r)?(e.preventDefault(),setTimeout(function(){return n.val(r.replace(/\d\s\/\s$/,""))})):void 0},f=function(e){return setTimeout(function(){var n,r;return r=(n=t(e.currentTarget)).val(),r=(r=m(r)).replace(/\D/g,"").slice(0,4),$(r,n)})},w=function(t){var e;return!(!t.metaKey&&!t.ctrlKey)||32!==t.which&&(0===t.which||(t.which<33||(e=String.fromCharCode(t.which),!!/[\d\s]/.test(e))))},C=function(n){var r,a,i,o;if(r=t(n.currentTarget),i=String.fromCharCode(n.which),/^\d+$/.test(i)&&!s(r))return o=(r.val()+i).replace(/\D/g,""),(a=e(o))?o.length<=a.length[a.length.length-1]:o.length<=16},T=function(e){var n,r;if(n=t(e.currentTarget),r=String.fromCharCode(e.which),/^\d+$/.test(r)&&!s(n))return!((n.val()+r).replace(/\D/g,"").length>6)&&void 0},y=function(e){var n,r;if(n=t(e.currentTarget),r=String.fromCharCode(e.which),/^\d+$/.test(r)&&!s(n))return(n.val()+r).length<=4},D=function(e){var n,a,i,o,l;if(l=(n=t(e.currentTarget)).val(),o=t.payment.cardType(l)||"unknown",!n.hasClass(o))return a=function(){var t,e,n;for(n=[],t=0,e=r.length;t<e;t++)i=r[t],n.push(i.type);return n}(),n.removeClass("unknown"),n.removeClass(a.join(" ")),n.addClass(o),n.toggleClass("identified","unknown"!==o),n.trigger("payment.cardType",o)},t.payment.fn.formatCardCVC=function(){return this.on("keypress",w),this.on("keypress",y),this.on("paste",f),this.on("change",f),this.on("input",f),this},t.payment.fn.formatCardExpiry=function(){return this.on("keypress",w),this.on("keypress",T),this.on("keypress",u),this.on("keypress",h),this.on("keypress",c),this.on("keydown",o),this.on("change",d),this.on("input",d),this},t.payment.fn.formatCardNumber=function(){return this.on("keypress",w),this.on("keypress",C),this.on("keypress",l),this.on("keydown",i),this.on("keyup",D),this.on("paste",g),this.on("change",g),this.on("input",g),this.on("input",D),this},t.payment.fn.restrictNumeric=function(){return this.on("keypress",w),this.on("paste",v),this.on("change",v),this.on("input",v),this},t.payment.fn.cardExpiryVal=function(){return t.payment.cardExpiryVal(t(this).val())},t.payment.cardExpiryVal=function(t){var e,n,r;return e=(r=t.split(/[\s\/]+/,2))[0],2===(null!=(n=r[1])?n.length:void 0)&&/^\d+$/.test(n)&&(n=(new Date).getFullYear().toString().slice(0,2)+n),{month:e=parseInt(e,10),year:n=parseInt(n,10)}},t.payment.validateCardNumber=function(t){var n,r;return t=(t+"").replace(/\s+|-/g,""),!!/^\d+$/.test(t)&&(!!(n=e(t))&&(r=t.length,k.call(n.length,r)>=0&&(!1===n.luhn||p(t))))},t.payment.validateCardExpiry=function(e,n){var r,a,i;return"object"==typeof e&&"month"in e&&(e=(i=e).month,n=i.year),!(!e||!n)&&(e=t.trim(e),n=t.trim(n),!!/^\d+$/.test(e)&&(!!/^\d+$/.test(n)&&(1<=e&&e<=12&&(2===n.length&&(n=n<70?"20"+n:"19"+n),4===n.length&&(a=new Date(n,e),r=new Date,a.setMonth(a.getMonth()-1),a.setMonth(a.getMonth()+1,1),a>r)))))},t.payment.validateCardCVC=function(e,r){var a,i;return e=t.trim(e),!!/^\d+$/.test(e)&&(null!=(a=n(r))?(i=e.length,k.call(a.cvcLength,i)>=0):e.length>=3&&e.length<=4)},t.payment.cardType=function(t){var n;return t&&(null!=(n=e(t))?n.type:void 0)||null},t.payment.formatCardNumber=function(n){var r,a,i,o;return n=n.replace(/\D/g,""),(r=e(n))?(i=r.length[r.length.length-1],n=n.slice(0,i),r.format.global?null!=(o=n.match(r.format))?o.join(" "):void 0:null!=(a=r.format.exec(n))?(a.shift(),(a=t.grep(a,function(t){return t})).join(" ")):void 0):n},t.payment.formatExpiry=function(t){var e,n,r,a;return(n=t.match(/^\D*(\d{1,2})(\D+)?(\d{1,4})?/))?(e=n[1]||"",r=n[2]||"",(a=n[3]||"").length>0?r=" / ":" /"===r?(e=e.substring(0,1),r=""):2===e.length||r.length>0?r=" / ":1===e.length&&"0"!==e&&"1"!==e&&(e="0"+e,r=" / "),e+r+a):""}}).call(this);
 (function(){var n,t,r,e=[].indexOf||function(n){for(var t=0,r=this.length;t<r;t++)if(t in this&&this[t]===n)return t;return-1};r=function(){function n(){this.trie={}}return n.prototype.push=function(n){var t,r,e,i,a,l,u;for(n=n.toString(),a=this.trie,u=[],r=e=0,i=(l=n.split("")).length;e<i;r=++e)null==a[t=l[r]]&&(r===n.length-1?a[t]=null:a[t]={}),u.push(a=a[t]);return u},n.prototype.find=function(n){var t,r,e,i,a,l;for(n=n.toString(),a=this.trie,r=e=0,i=(l=n.split("")).length;e<i;r=++e){if(t=l[r],!a.hasOwnProperty(t))return!1;if(null===a[t])return!0;a=a[t]}},n}(),t=function(){function n(n){if(this.trie=n,this.trie.constructor!==r)throw Error("Range constructor requires a Trie parameter")}return n.rangeWithString=function(t){var e,i,a,l,u,o,c,h,f;if("string"!=typeof t)throw Error("rangeWithString requires a string parameter");for(t=(t=t.replace(/ /g,"")).split(","),f=new r,e=0,a=t.length;e<a;e++)if(u=(o=t[e]).match(/^(\d+)-(\d+)$/))for(l=i=c=u[1],h=u[2];c<=h?i<=h:i>=h;l=c<=h?++i:--i)f.push(l);else{if(!o.match(/^\d+$/))throw Error("Invalid range '"+u+"'");f.push(o)}return new n(f)},n.prototype.match=function(n){return this.trie.find(n)},n}(),(n=jQuery).fn.validateCreditCard=function(r,i){var a,l,u,o,c,h,f,s,g,p,v,d,m,y,_,w;for(o=[{name:"amex",range:"34,37",valid_length:[15,16,17,18,19]},{name:"jcb",range:"3528-3589",valid_length:[16,17,18,19]},{name:"visa",range:"4",valid_length:[13,14,15,16,17,18,19]},{name:"mastercard",range:"51-55,2221-2720",valid_length:[16,17,18,19]},{name:"discover",range:"6011, 622126-622925, 644-649, 65",valid_length:[16,17,18,19]},{name:"unionpay",range:"62",valid_length:[16,17,18,19]}],a=!1,r&&("object"==typeof r?(i=r,a=!1,r=null):"function"==typeof r&&(a=!0)),null==i&&(i={}),null==i.accept&&(i.accept=function(){var n,t,r;for(r=[],n=0,t=o.length;n<t;n++)l=o[n],r.push(l.name);return r}()),s=0,g=(v=i.accept).length;s<g;s++)if(u=v[s],e.call(function(){var n,t,r;for(r=[],n=0,t=o.length;n<t;n++)l=o[n],r.push(l.name);return r}(),u)<0)throw Error("Credit card type '"+u+"' is not supported");return c=function(n){var r,a,c;for(r=0,a=(c=function(){var n,t,r,a;for(a=[],n=0,t=o.length;n<t;n++)r=(l=o[n]).name,e.call(i.accept,r)>=0&&a.push(l);return a}()).length;r<a;r++)if(u=c[r],t.rangeWithString(u.range).match(n))return u;return null},f=function(n){var t,r,e,i,a,l;for(l=0,i=r=0,e=(a=n.split("").reverse()).length;r<e;i=++r)t=+(t=a[i]),l+=i%2?(t*=2)<10?t:t-9:t;return l%10==0},h=function(n,t){var r;return r=n.length,e.call(t.valid_length,r)>=0},m=function(n){var t,r;return r=!1,t=!1,null!=(u=c(n))&&(r=f(n),t=h(n,u)),{card_type:u,valid:r&&t,luhn_valid:r,length_valid:t}},y=this,d=function(){var t;return t=p(n(y).val()),m(t)},p=function(n){return n.replace(/[ -]/g,"")},a?(this.on("input.jccv",(_=this,function(){return n(_).off("keyup.jccv"),r.call(_,d())})),this.on("keyup.jccv",(w=this,function(){return r.call(w,d())})),r.call(this,d()),this):d()}}).call(this);
 
 
@@ -1815,3 +1816,95 @@ function validateCC()
     });
 }
 
+
+$(document).ready(function()
+{
+
+
+    $('.valid_inputCardExpiry').payment('formatCardExpiry');
+    $('.valid_cc_number').payment('formatCardNumber');
+
+    // Show cc icon on page load.
+    if ($('.valid_cc_number').val().length > 0)
+    {
+        validateCC();
+    }
+
+    // CC CHECK LISTENERS
+    $('.valid_cc_number').keyup(function()
+    {
+        if ($('.valid_cc_number').val().length == 0)
+        {
+            var cc_icon = $('.valid_cc_number').closest('.card-number').find('i'), cc_name;
+
+            cc_icon.removeClass();
+            cc_icon.closest('.card-number').removeClass('validation-error');
+        }
+
+        if ($('.valid_cc_number').val().length >= 13)
+        {
+            validateCC();
+        }
+    });
+
+    $('.valid_cc_number').focusout(function()
+    {
+        var cc_icon = $('.valid_cc_number').closest('.card-number').find('i'), cc_name;
+        var cc_empty = $('input[name=cc_number]').val() == '';
+
+        if ($(this).val().length > 0)
+        {
+            $(this).validateCreditCard(function(result)
+            {
+                if (!result.length_valid)
+                {
+                    cc_icon.removeClass();
+                    cc_icon.addClass('input-validation-icon zmdi zmdi-alert-circle-o');
+                    cc_icon.closest('.card-number').addClass('validation-error');
+                }
+            });
+        }
+    });
+
+    // EXPIRY CHECK LISTENERS.
+    $('.valid_inputCardExpiry').on('keyup', function()
+    {
+        var expiry_max_length = 7;
+        if ($(this).val().length == expiry_max_length)
+        {
+            checkExpiry();
+        }
+
+        if ($(this).val().length == 0)
+        {
+            hideExpiryError();
+        }
+    });
+
+    $('.valid_inputCardExpiry').on('focusout', function()
+    {
+        checkExpiry();
+    });
+
+
+    // CVV CHECK LISTENERS.
+    $('.valid_cc_cscv').on('keyup', function()
+    {
+        var cvv_min_length = 3;
+        if ($(this).val().length >= cvv_min_length)
+        {
+            checkCVV();
+        }
+
+        if ($(this).val().length == 0)
+        {
+            hideCVVError();
+        }
+    });
+
+    $('.valid_cc_cscv').on('focusout', function()
+    {
+        checkCVV();
+    });
+
+});
