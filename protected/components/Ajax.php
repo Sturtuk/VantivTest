@@ -3642,15 +3642,19 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
     	$this->code=1;
 	    $this->msg=Yii::t("default","Setting saved");
 	}
-	
-	public function InitPlaceOrder()
-	{
-	    global $VApp;
-	    print_r($_SESSION);
-	    //dump($this->data);
+
+	public function VntProcessPay(){
+        global $VApp;
+        print_r($_SESSION);
+        //dump($this->data);
         print_r($VApp->processPay());
         die();
-		$mtid=$_SESSION['kr_merchant_id'];
+
+    }
+
+	public function InitPlaceOrder()
+	{
+
 			    
 	    if ( $this->data['delivery_type']=="delivery"){
 	    	if (FunctionsV3::isSearchByLocation()){	    		
