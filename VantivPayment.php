@@ -20,15 +20,13 @@ class VantivPay
         $message = XmlParser::getNode($this->saleResponse,'message');
         $transid =  XmlParser::getNode($this->saleResponse,'litleTxnId');
 
-        $response = new Response();
-        $response->setContent(json_encode(array(
-            'data' => [
-                'status'    =>  $response,
-                'msg'       =>  $message,
-                'transId'   =>  $transid,
-            ],
-        )));
-        $response->headers->set('Content-Type', 'application/json');
+        $data =  [
+            'status'    =>  $response,
+            'msg'       =>  $message,
+            'transId'   =>  $transid,
+        ];
+
+        echo json_encode($data);
 
 	}
 
