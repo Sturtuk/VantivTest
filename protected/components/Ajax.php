@@ -3646,9 +3646,10 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	public function VntProcessPay(){
         global $VApp;
 
-        $Orderdata =Yii::app()->functions->getOrder($_GET['id']);
+        $Orderdata =Yii::app()->functions->getOrder($_GET['OrderID']);
         $sale_info = [
-            'orderId' => $_GET['id'],
+            'id'        =>      $_GET['OrderID'],
+            'orderId' => $_GET['OrderID'],
             'amount'  => normalPrettyPrice($Orderdata['total_w_tax']),
             'orderSource' => 'ecommerce',
             'billToAddress' =>
@@ -3671,7 +3672,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
 
         print_r($sale_info);
-        print_r($VApp);
+
         print_r($VApp->PaymentData($sale_info))->ProcessPayment();
         die();
 
