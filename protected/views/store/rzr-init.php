@@ -33,7 +33,8 @@ $this->renderPartial('/front/order-progress-bar',array(
 
 	<form id="ProcessVntPay" onsubmit="return false;" method="POST">
 
-    <input type="hidden" value="<?php echo $data['order_id']?>" name="hidden">
+        <input type="hidden" name="action" value="VntProcessPay">
+    <input type="hidden" value="<?php echo $data['order_id']?>" name="order_id">
 
 
         <div class="row top10">

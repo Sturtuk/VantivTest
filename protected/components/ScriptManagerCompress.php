@@ -99,8 +99,11 @@ class ScriptManagerCompress
 		,CClientScript::POS_END); 
 		
 		$cs->registerScriptFile($baseUrl."/assets/js/store-v3.js"
-		,CClientScript::POS_END); 
-	}
+		,CClientScript::POS_END);
+
+        $cs->registerScriptFile("//cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"
+            ,CClientScript::POS_END);
+    }
 	
 	public static function registerAllCSSFiles()
 	{
@@ -108,6 +111,8 @@ class ScriptManagerCompress
 		$cs = Yii::app()->getClientScript();
 		
 		$cs->registerCssFile("//fonts.googleapis.com/css?family=Open+Sans|Podkova|Rosario|Abel|PT+Sans|Source+Sans+Pro:400,600,300|Roboto|Montserrat:400,700|Lato:400,300,100italic,100,300italic,400italic,700,700italic,900,900italic|Raleway:300,400,600,800");
+		$cs->registerCssFile("//cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css");
+
 		
 		if (Yii::app()->functions->getOptionAdmin('theme_time_pick')==2){
 		  $cs->registerCssFile($baseUrl."/assets/vendor/timepicker.co/jquery.timepicker.min.css");

@@ -1669,6 +1669,19 @@ if($trigger !== event.target && !$trigger.has(event.target).length){
     })
 
 
+    $("#VantivPayBtn").on('click',function(){
+        var Postdata = $("#ProcessVntPay").serialize();
+        $.ajax({
+            url: '/admin/ajax',
+            method: 'post',
+            data: Postdata
+        })
+    })
+
+
+	//VantivPayBtn
+
+
 
 });
 
