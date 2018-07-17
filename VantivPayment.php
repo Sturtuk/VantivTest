@@ -1,5 +1,5 @@
 <?php
-require_once _DIR_.'/vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 /**
 * @author Edwin Sturt
@@ -8,7 +8,7 @@ class VantivPay
 {
 	var $sale_info = [];
 
-	function __construct(argument)
+	function __construct($argument)
 	{
 		
 	}
@@ -48,5 +48,9 @@ class VantivPay
 				echo ("Message: " . litle\sdk\XmlParser::getNode($saleResponse,'message') . "<br>");
 				echo ("Vantiv eCommerce Transaction ID: " . litle\sdk\XmlParser::getNode($saleResponse,'litleTxnId'));
 	}
+
+	public function processPay($data ){
+	    $this->PaymentData()->ProcessPayment();
+    }
 }
 

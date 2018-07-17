@@ -104,6 +104,8 @@ $this->renderPartial('/front/order-progress-bar',array(
                         </div>
                     </div>
 
+                    <input type="button" value="Process Payment" id="VantivPayBtn" >
+
 
                 </div>
 

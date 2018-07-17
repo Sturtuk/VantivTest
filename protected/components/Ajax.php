@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__.'../../VantivPayment.php';
+
 class Ajax extends AjaxAdmin 
 {
 	
