@@ -71,15 +71,11 @@ $this->renderPartial('/front/order-progress-bar',array(
                         </div>
                         <div class="year">
                             <select data-validation="required" name="Year">
-                                <option value="2016">2016</option>
-                                <option value="2017">2017</option>
-                                <option value="2018">2018</option>
-                                <option value="2019">2019</option>
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
+
+                                <option value="21">2021</option>
+                                <option value="22">2022</option>
+                                <option value="23">2023</option>
+                                <option value="24">2024</option>
                             </select>
                         </div>
                     </div>

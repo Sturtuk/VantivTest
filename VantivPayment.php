@@ -23,6 +23,7 @@ class VantivPay
             'status'    =>  $response,
             'msg'       =>  $message,
             'transId'   =>  $transid,
+            'OrderID'   =>  $data['order_id'],
         ];
 
         echo json_encode($res_data);
