@@ -1,6 +1,6 @@
 <?php
 
-require_once '/home/access/public_html/c41673.takeoutlist.com/vendor/autoload.php';
+require_once '../../vendor/autoload.php';
 
 class Ajax extends AjaxAdmin 
 {
@@ -3645,7 +3645,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	}
 
 	public function VntProcessPay(){
-
+        global $VApp;
 
         $Orderdata =Yii::app()->functions->getOrder($_POST['OrderID']);
         $sale_info = [
@@ -3672,26 +3672,16 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                 ]
         ];
 
-        $initialize = new litle\sdk\LitleOnlineRequest();
-        $saleResponse =   $initialize->authorizationRequest($sale_info);
+        print_r($this->httpPost("http://c41673.takeoutlist.com/Ptest.php",$sale_info));
 
-
-        $response =  (litle\sdk\XmlParser::getNode($saleResponse,'response'));
-        $message = (litle\sdk\XmlParser::getNode($saleResponse,'message'));
-        $transid =  (litle\sdk\XmlParser::getNode($saleResponse,'litleTxnId'));
-
-        $res_data =  [
-            'status'    =>  $response,
-            'msg'       =>  $message,
-            'transId'   =>  $transid,
-        ];
-
-        echo json_encode($res_data);
+       // $VApp->PaymentData($sale_info);
 
     }
 
     function httpPost($url,$params)
     {
+
+        $fields_string = http_build_query($params);
 
         $ch = curl_init();
 
@@ -3699,7 +3689,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
         curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
         curl_setopt($ch,CURLOPT_HEADER, false);
         curl_setopt($ch, CURLOPT_POST, count($params));
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
 
         $output=curl_exec($ch);
 
