@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__.'../../VantivPayment.php';
+
+use Symfony\Component\HttpFoundation\Request;
 
 class Ajax extends AjaxAdmin 
 {
@@ -3643,11 +3644,11 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	    $this->msg=Yii::t("default","Setting saved");
 	}
 	
-	public function InitPlaceOrder()
+	public function InitPlaceOrder(Request $request)
 	{
 		//dump($this->data);
-		
-		print_r($_SESSION);
+        print_r($request->get('action'));
+        die();
 		$mtid=$_SESSION['kr_merchant_id'];
 			    
 	    if ( $this->data['delivery_type']=="delivery"){
