@@ -1664,7 +1664,7 @@ if($trigger !== event.target && !$trigger.has(event.target).length){
 }
 
 
-    $(".place_order").on('click',function(){
+    $(".submitOrderPay").on('click',function(){
         $("#frm-delivery").submit();
     })
 
@@ -1680,9 +1680,9 @@ if($trigger !== event.target && !$trigger.has(event.target).length){
             console.log(resp);
             var d = JSON.parse(resp);
 
-            if(d.status == 000) {
+            if(d.status == '000') {
                 swal('info',d.msg,'success');
-                window.location = 'receipt?id='d.OrderID;
+                window.location = 'receipt?id='+d.OrderID;
             }
 
             if(d.status == 010) {

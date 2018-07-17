@@ -579,7 +579,7 @@ Yii::app()->functions->getOptionAdmin("admin_currency_position"));
 	          <!--END SMS Order verification-->
            
 	          <div class="text-center top25">
-	          <a href="javascript:;" class="place_order green-button medium inline block">
+	          <a href="javascript:;" class="place_order submitOrderPay green-button medium inline block">
 	          <?php echo t("Place Order")?>
 	          </a>
 	          </div>
