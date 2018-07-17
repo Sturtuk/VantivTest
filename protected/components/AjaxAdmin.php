@@ -1,4 +1,7 @@
 <?php
+namespace App;
+
+
 /*******************************************
 @author : bastikikang 
 @author email: basti@codemywebapps.com

@@ -1,4 +1,5 @@
 <?php
+namespace App;
 /*******************************************
 @author : bastikikang 
 @author email: bastikikang@gmail.com
@@ -40,9 +41,9 @@ ini_set("display_errors","on");
 $loader = require 'vendor/autoload.php';
 $loader->register();
 
-define('YII_ENABLE_ERROR_HANDLER', false);
-define('YII_ENABLE_EXCEPTION_HANDLER', false);
-ini_set("display_errors",false);
+define('YII_ENABLE_ERROR_HANDLER', true);
+define('YII_ENABLE_EXCEPTION_HANDLER', true);
+ini_set("display_errors",true);
 //error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 // include Yii bootstrap file
