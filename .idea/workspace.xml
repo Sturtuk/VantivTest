@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VantivPayment.php" afterPath="$PROJECT_DIR$/VantivPayment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -371,8 +370,8 @@
       <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VantivPayment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="300">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding>
                 <element signature="e#75#121#0#PHP" expanded="true" />
               </folding>
@@ -914,11 +913,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531837271639</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Payment Done">
+      <created>1531837430504</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1531837430504</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8365000" />
+    <option name="totallyTimeSpent" value="8446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1590,8 +1596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VantivPayment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="300">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
             <element signature="e#75#121#0#PHP" expanded="true" />
           </folding>

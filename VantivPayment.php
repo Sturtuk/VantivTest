@@ -15,10 +15,11 @@ class VantivPay
 	public function PaymentData(array $data){
 
         $initialize = new litle\sdk\LitleOnlineRequest();
-        $this->saleResponse =$initialize->saleRequest($data);
-        $response = (XmlParser::getNode($this->saleResponse,'response'));
-        $message = XmlParser::getNode($this->saleResponse,'message');
-        $transid =  XmlParser::getNode($this->saleResponse,'litleTxnId');
+        $saleResponse =   $initialize->saleRequest($data);
+
+        $response = XmlParser::getNode($saleResponse,'response');
+        $message = XmlParser::getNode($saleResponse,'message');
+        $transid =  XmlParser::getNode($saleResponse,'litleTxnId');
 
         $data =  [
             'status'    =>  $response,
