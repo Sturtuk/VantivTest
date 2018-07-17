@@ -1,5 +1,6 @@
 <?php
 
+require_once '../../vendor/autoload.php';
 
 class Ajax extends AjaxAdmin 
 {
@@ -3671,29 +3672,34 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                 ]
         ];
 
-        print_r($this->httpPost("http://c41673.takeoutlist.com/Ptest.php",$sale_info));
+        $initialize = new litle\sdk\LitleOnlineRequest();
+        $saleResponse =   $initialize->authorizationRequest($sale_info);
 
-       // $VApp->PaymentData($sale_info);
+
+        $response =  (litle\sdk\XmlParser::getNode($saleResponse,'response'));
+        $message = (litle\sdk\XmlParser::getNode($saleResponse,'message'));
+        $transid =  (litle\sdk\XmlParser::getNode($saleResponse,'litleTxnId'));
+
+        $res_data =  [
+            'status'    =>  $response,
+            'msg'       =>  $message,
+            'transId'   =>  $transid,
+        ];
+
+        echo json_encode($res_data);
 
     }
 
     function httpPost($url,$params)
     {
-        $postData = '';
-        //create name value pairs seperated by &
-        foreach($params as $k => $v)
-        {
-            $postData .= $k . '='.$v.'&';
-        }
-        $postData = rtrim($postData, '&');
 
         $ch = curl_init();
 
         curl_setopt($ch,CURLOPT_URL,$url);
         curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
         curl_setopt($ch,CURLOPT_HEADER, false);
-        curl_setopt($ch, CURLOPT_POST, count($postData));
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+        curl_setopt($ch, CURLOPT_POST, count($params));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
 
         $output=curl_exec($ch);
 
