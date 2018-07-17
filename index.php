@@ -38,8 +38,8 @@
  ***********************************************************/
 
 
-define('YII_ENABLE_ERROR_HANDLER', true);
-define('YII_ENABLE_EXCEPTION_HANDLER', true);
+define('YII_ENABLE_ERROR_HANDLER', false);
+define('YII_ENABLE_EXCEPTION_HANDLER', false);
 ini_set("display_errors",true);
 //error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
@@ -47,6 +47,6 @@ ini_set("display_errors",true);
 require_once(dirname(__FILE__).'/yiiframework/yii.php');
 $config=dirname(__FILE__).'/protected/config/main.php';
 
-require_once 'VantivPayment.php';
+//require_once 'VantivPayment.php';
 // create a Web application instance and run
 Yii::createWebApplication($config)->run();
