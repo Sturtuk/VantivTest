@@ -3671,6 +3671,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
 
         print_r($sale_info);
+        print_r($VApp);
         print_r($VApp->PaymentData($sale_info))->ProcessPayment();
         die();
 
