@@ -17,6 +17,12 @@ class VantivPay
         $initialize = new litle\sdk\LitleOnlineRequest();
         $saleResponse =   $initialize->saleRequest($data);
 
+
+        echo ("Response: " . (litle\sdk\XmlParser::getNode($saleResponse,'response')) . "<br>");
+        echo ("Message: " . litle\sdk\XmlParser::getNode($saleResponse,'message') . "<br>");
+        echo ("Vantiv eCommerce Transaction ID: " . litle\sdk\XmlParser::getNode($saleResponse,'litleTxnId'));
+
+
         $response = XmlParser::getNode($saleResponse,'response');
         $message = XmlParser::getNode($saleResponse,'message');
         $transid =  XmlParser::getNode($saleResponse,'litleTxnId');
