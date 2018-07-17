@@ -1,7 +1,8 @@
 <?php
 require_once 'vendor/autoload.php';
 ini_set("display_errors","on");
-use Symfony\Component\HttpFoundation\Request;
+
+use Symfony\Component\HttpFoundation\Response;
 use litle\sdk\XmlParser;
 /**
 * @author Edwin Sturt
@@ -15,17 +16,20 @@ class VantivPay
 
         $initialize = new litle\sdk\LitleOnlineRequest();
         $this->saleResponse =$initialize->saleRequest($data);
+        $response = (XmlParser::getNode($this->saleResponse,'response'));
+        $message = XmlParser::getNode($this->saleResponse,'message');
+        $transid =  XmlParser::getNode($this->saleResponse,'litleTxnId');
 
-	            
-		return $this;
+        $response = new Response();
+        $response->setContent(json_encode(array(
+            'data' => [
+                'status'    =>  $response,
+                'msg'       =>  $message,
+                'transId'   =>  $transid,
+            ],
+        )));
+        $response->headers->set('Content-Type', 'application/json');
 
-	}
-	public function ProcessPayment(){
-	    print_r($this->saleResponse);
-//				$response = (XmlParser::getNode($this->saleResponse,'response'));
-//				$message = XmlParser::getNode($this->saleResponse,'message');
-//				echo ("Vantiv eCommerce Transaction ID: " . XmlParser::getNode($this->saleResponse,'litleTxnId'));
-        return $this;
 	}
 
 }
