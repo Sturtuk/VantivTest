@@ -10,6 +10,14 @@ $this->renderPartial('/front/order-progress-bar',array(
 ));
 //dump($credentials);
 ?>
+<style>
+    .floatinglabel > div.input-validation-error {
+        color: #e53935;
+    }
+    .input-validation-error {
+        display: none;
+    }
+</style>
 <div class="sections section-grey2 section-orangeform">
   <div class="container">
   <div class="row top30">
