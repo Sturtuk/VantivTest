@@ -5,9 +5,9 @@ print_r($_REQUEST);
 #sale
 $sale_info = array(
 
-           'id' => $_REQUEST['id'],
-             'orderId' => $_REQUEST['orderId'],
-             'amount'  => $_REQUEST['amount'],
+           'id' => '11',
+             'orderId' => '1345',
+             'amount'  => '12.00',
              'orderSource' => 'ecommerce',
              'billToAddress' => [
                              'name' => 'John Smith' ,
