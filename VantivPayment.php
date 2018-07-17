@@ -1,8 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
 
-
-use litle\sdk\XmlParser;
 /**
 * @author Edwin Sturt
 */
@@ -16,18 +14,17 @@ class VantivPay
         $initialize = new litle\sdk\LitleOnlineRequest();
         $saleResponse =   $initialize->authorizationRequest($data);
 
-        print_r($saleResponse);
 
-        $response = XmlParser::getNode($saleResponse,'response');
-        $message = XmlParser::getNode($saleResponse,'message');
-        $transid =  XmlParser::getNode($saleResponse,'litleTxnId');
+        $response =  (litle\sdk\XmlParser::getNode($saleResponse,'response'));
+        $message = (litle\sdk\XmlParser::getNode($saleResponse,'message'));
+        $transid =  (litle\sdk\XmlParser::getNode($saleResponse,'litleTxnId'));
 
         $data =  [
             'status'    =>  $response,
             'msg'       =>  $message,
             'transId'   =>  $transid,
         ];
-
+        print_r($data);
         echo json_encode($data);
 
 	}

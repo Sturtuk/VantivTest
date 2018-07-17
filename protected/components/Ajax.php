@@ -3648,18 +3648,19 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
         $Orderdata =Yii::app()->functions->getOrder($_POST['OrderID']);
         $sale_info = [
+
             'id'        =>      $_POST['OrderID'],
             'orderId' => $_POST['OrderID'],
             'amount'  => normalPrettyPrice($Orderdata['total_w_tax']),
             'orderSource' => 'ecommerce',
             'billToAddress' =>
                 [
-                    'name' => 'John Smith' ,
-                    'addressLine1' => ' 1 Main St.',
-                    'city' => 'Burlington' ,
-                    'state' => 'MA' ,
-                    'zip' => '0183-3747',
-                    'country' => 'US'
+                    'name' 			=>  $_SESSION['kr_client']['first_name'],
+                    'addressLine1' 	=>  $_SESSION['kr_client']['street'],
+                    'city' 			=>  $_SESSION['kr_client']['city'],
+                    'state' 			=>  $_SESSION['kr_client']['state'],
+                    'zip' 				=>  $_SESSION['kr_client']['zipcode'],
+                    'country' 			=> 	$_SESSION['kr_client']['country_code']
                 ],
             'card' =>
                 [
@@ -3669,9 +3670,8 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                     'type' => 'VI'
                 ]
         ];
-        print_r($sale_info);
+
         print_r($VApp->PaymentData($sale_info));
-        die();
 
     }
 
