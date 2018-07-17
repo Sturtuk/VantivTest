@@ -3645,7 +3645,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	}
 
 	public function VntProcessPay(){
-        global $VApp;
+
 
         $Orderdata =Yii::app()->functions->getOrder($_POST['OrderID']);
         $sale_info = [
