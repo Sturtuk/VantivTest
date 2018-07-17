@@ -238,7 +238,23 @@
 //         }
 //     });
 
+// 	$( function() {
+// 		$( "#dialog" ).dialog({
+// 		  autoOpen: false,
+// 		  show: {
 
+// 			duration: 1000
+// 		  },
+// 		  hide: {
+
+// 			duration: 1000
+// 		  }
+// 		});
+
+// 		$( "#opener" ).on( "click", function() {
+// 		  $( "#dialog" ).dialog( "open" );
+// 		});
+// 	});
 
 //  $(document).ready(function() {
 
@@ -254,24 +270,6 @@
 //   getcartcount();
 
 // });
-
-$( function() {
-    $( "#dialog" ).dialog({
-        autoOpen: false,
-        show: {
-
-            duration: 1000
-        },
-        hide: {
-
-            duration: 1000
-        }
-    });
-
-    $( "#opener" ).on( "click", function() {
-        $( "#dialog" ).dialog( "open" );
-    });
-});
 </script>
 
 
