@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="">
+    <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="Payment Done">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/store-v3.js" afterPath="$PROJECT_DIR$/assets/js/store-v3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/rzr-init.php" afterPath="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,25 +17,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="1672" column="0" lean-forward="true" selection-start-line="1672" selection-start-column="0" selection-end-line="1706" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="1722" column="0" lean-forward="true" selection-start-line="1722" selection-start-column="0" selection-end-line="1722" selection-end-column="0" />
               <folding>
                 <element signature="e#42807#42843#0" expanded="false" />
                 <element signature="e#42887#43356#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment-option.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/store/payment-option.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="581" column="70" lean-forward="false" selection-start-line="581" selection-start-column="56" selection-end-line="581" selection-end-column="70" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -51,8 +43,8 @@
       <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="3674" column="20" lean-forward="false" selection-start-line="3674" selection-start-column="20" selection-end-line="3674" selection-end-column="20" />
+            <state relative-caret-position="472">
+              <caret line="3668" column="53" lean-forward="true" selection-start-line="3668" selection-start-column="53" selection-end-line="3668" selection-end-column="53" />
               <folding>
                 <element signature="e#44#3225#0#PHP" expanded="false" />
                 <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -139,293 +131,111 @@
                 <element signature="e#124427#125455#0#PHP" expanded="false" />
                 <element signature="e#125459#126259#0#PHP" expanded="false" />
                 <element signature="e#126263#127192#0#PHP" expanded="false" />
-                <marker date="1531840849455" expanded="true" signature="6569:7329" ph="SELECT a.*,b... " />
-                <marker date="1531840849455" expanded="true" signature="6611:6704" ph="select resta... " />
-                <marker date="1531840849455" expanded="true" signature="6753:6855" ph="select sum(t... " />
-                <marker date="1531840849455" expanded="true" signature="6915:7020" ph="select sum(t... " />
-                <marker date="1531840849455" expanded="true" signature="9558:9763" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="9581:9671" ph="select resta... " />
-                <marker date="1531840849455" expanded="true" signature="18510:18695" ph="SELECT * FRO... " />
-                <marker date="1531840849455" expanded="true" signature="20698:20831" ph="SELECT * FRO... " />
-                <marker date="1531840849455" expanded="true" signature="21181:21393" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="34577:34763" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="34595:34676" ph="select resta... " />
-                <marker date="1531840849455" expanded="true" signature="38214:38310" ph="SELECT count... " />
-                <marker date="1531840849455" expanded="true" signature="41021:41485" ph="SELECT a.res... " />
-                <marker date="1531840849455" expanded="true" signature="41053:41143" ph="select sum(t... " />
-                <marker date="1531840849455" expanded="true" signature="41177:41263" ph="select sum(t... " />
-                <marker date="1531840849455" expanded="true" signature="41302:41389" ph="select sum(m... " />
-                <marker date="1531840849455" expanded="true" signature="44069:44134" ph="SELECT * FRO... " />
-                <marker date="1531840849455" expanded="true" signature="44412:44624" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="54962:55270" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="54980:55073" ph="select resta... " />
-                <marker date="1531840849455" expanded="true" signature="55102:55193" ph="select title... " />
-                <marker date="1531840849455" expanded="true" signature="55229:55247" ph="{fax_package... " />
-                <marker date="1531840849455" expanded="true" signature="55395:55591" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="59835:59952" ph="SELECT * FRO... " />
-                <marker date="1531840849455" expanded="true" signature="59852:59866" ph="{fax_broadca... " />
-                <marker date="1531840849455" expanded="true" signature="61294:61529" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="61312:61391" ph="select title... " />
-                <marker date="1531840849455" expanded="true" signature="61423:61441" ph="{fax_package... " />
-                <marker date="1531840849455" expanded="true" signature="62367:62602" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="62385:62464" ph="select title... " />
-                <marker date="1531840849455" expanded="true" signature="62496:62514" ph="{sms_package... " />
-                <marker date="1531840849455" expanded="true" signature="64052:64124" ph="DELETE FROM " />
-                <marker date="1531840849455" expanded="true" signature="65411:65913" ph="SELECT sum(a... " />
-                <marker date="1531840849455" expanded="true" signature="65463:65600" ph="select sum(n... " />
-                <marker date="1531840849455" expanded="true" signature="65496:65509" ph="{bookingtabl... " />
-                <marker date="1531840849455" expanded="true" signature="65631:65769" ph="select sum(n... " />
-                <marker date="1531840849455" expanded="true" signature="65664:65677" ph="{bookingtabl... " />
-                <marker date="1531840849455" expanded="true" signature="65804:65817" ph="{bookingtabl... " />
-                <marker date="1531840849455" expanded="true" signature="67220:67916" ph="SELECT a.mer... " />
-                <marker date="1531840849455" expanded="true" signature="67295:67431" ph="select sum(n... " />
-                <marker date="1531840849455" expanded="true" signature="67336:67349" ph="{bookingtabl... " />
-                <marker date="1531840849455" expanded="true" signature="67486:67620" ph="select sum(n... " />
-                <marker date="1531840849455" expanded="true" signature="67527:67540" ph="{bookingtabl... " />
-                <marker date="1531840849455" expanded="true" signature="67673:67808" ph="select sum(n... " />
-                <marker date="1531840849455" expanded="true" signature="67714:67727" ph="{bookingtabl... " />
-                <marker date="1531840849455" expanded="true" signature="68520:68690" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="68538:68618" ph="select resta... " />
-                <marker date="1531840849455" expanded="true" signature="68651:68665" ph="{fax_broadca... " />
-                <marker date="1531840849455" expanded="true" signature="69843:70043" ph="SELECT SQL_C... ${$sTable}" />
-                <marker date="1531840849455" expanded="true" signature="69887:69974" ph="select title... " />
-                <marker date="1531840849455" expanded="true" signature="70727:70945" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="79246:79638" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="79264:79340" ph="select resta... " />
-                <marker date="1531840849455" expanded="true" signature="79372:79463" ph="select conca... " />
-                <marker date="1531840849455" expanded="true" signature="79500:79513" ph="{bank_deposi... " />
-                <marker date="1531840849455" expanded="true" signature="79763:79975" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="83935:84194" ph="SELECT merch... " />
-                <marker date="1531840849455" expanded="true" signature="84080:84094" ph="{view_mercha... " />
-                <marker date="1531840849455" expanded="true" signature="85962:86321" ph="SELECT SQL_C... " />
-                <marker date="1531840849455" expanded="true" signature="86220:86234" ph="{view_mercha... " />
-                <marker date="1531840849455" expanded="true" signature="87452:87547" ph="SELECT * FRO... " />
-                <marker date="1531840849455" expanded="true" signature="88272:88453" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="92666:92941" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="92688:92769" ph="select count... " />
-                <marker date="1531840849455" expanded="true" signature="93060:93317" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="93082:93163" ph="select count... " />
-                <marker date="1531840849455" expanded="true" signature="93766:93982" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="95289:95510" ph="SELECT id,lo... " />
-                <marker date="1531840849455" expanded="true" signature="95409:95422" ph="{address_boo... " />
-                <marker date="1531840849455" expanded="true" signature="95790:95980" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="97110:97241" ph="UPDATE {{add... " />
-                <marker date="1531840849455" expanded="true" signature="97118:97131" ph="{address_boo... " />
-                <marker date="1531840849455" expanded="true" signature="98175:98458" ph="SELECT a.*, " />
-                <marker date="1531840849455" expanded="true" signature="98193:98282" ph="select conca... " />
-                <marker date="1531840849455" expanded="true" signature="98309:98389" ph="select resta... " />
-                <marker date="1531840849455" expanded="true" signature="98606:98802" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="108217:108271" ph="SELECT * FRO... " />
-                <marker date="1531840849455" expanded="true" signature="108396:108608" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="110668:110787" ph="SELECT DISTI... " />
-                <marker date="1531840849455" expanded="true" signature="117632:117714" ph="SELECT * FRO... " />
-                <marker date="1531840849455" expanded="true" signature="118045:118241" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="122408:122516" ph="..." />
-                <marker date="1531840849455" expanded="true" signature="124806:124878" ph="DELETE FROM " />
-                <marker date="1531840849455" expanded="true" signature="131467:131567" ph="SELECT SQL_C... " />
-                <marker date="1531840849455" expanded="true" signature="133296:133404" ph="SELECT SQL_C... " />
-                <marker date="1531840849455" expanded="true" signature="133339:133358" ph="{location_co... " />
-                <marker date="1531840849455" expanded="true" signature="134862:134940" ph="SELECT SQL_C... ${$sTable}" />
-                <marker date="1531840849455" expanded="true" signature="137777:138127" ph="SELECT SQL_C... " />
-                <marker date="1531840849455" expanded="true" signature="140626:140777" ph="SELECT SQL_C... ${$sTable}" />
+                <marker date="1531849019923" expanded="true" signature="6569:7329" ph="SELECT a.*,b... " />
+                <marker date="1531849019923" expanded="true" signature="6611:6704" ph="select resta... " />
+                <marker date="1531849019923" expanded="true" signature="6753:6855" ph="select sum(t... " />
+                <marker date="1531849019923" expanded="true" signature="6915:7020" ph="select sum(t... " />
+                <marker date="1531849019923" expanded="true" signature="9558:9763" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="9581:9671" ph="select resta... " />
+                <marker date="1531849019923" expanded="true" signature="18510:18695" ph="SELECT * FRO... " />
+                <marker date="1531849019923" expanded="true" signature="20698:20831" ph="SELECT * FRO... " />
+                <marker date="1531849019923" expanded="true" signature="21181:21393" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="34577:34763" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="34595:34676" ph="select resta... " />
+                <marker date="1531849019923" expanded="true" signature="38214:38310" ph="SELECT count... " />
+                <marker date="1531849019923" expanded="true" signature="41021:41485" ph="SELECT a.res... " />
+                <marker date="1531849019923" expanded="true" signature="41053:41143" ph="select sum(t... " />
+                <marker date="1531849019923" expanded="true" signature="41177:41263" ph="select sum(t... " />
+                <marker date="1531849019923" expanded="true" signature="41302:41389" ph="select sum(m... " />
+                <marker date="1531849019923" expanded="true" signature="44069:44134" ph="SELECT * FRO... " />
+                <marker date="1531849019923" expanded="true" signature="44412:44624" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="54962:55270" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="54980:55073" ph="select resta... " />
+                <marker date="1531849019923" expanded="true" signature="55102:55193" ph="select title... " />
+                <marker date="1531849019923" expanded="true" signature="55229:55247" ph="{fax_package... " />
+                <marker date="1531849019923" expanded="true" signature="55395:55591" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="59835:59952" ph="SELECT * FRO... " />
+                <marker date="1531849019923" expanded="true" signature="59852:59866" ph="{fax_broadca... " />
+                <marker date="1531849019923" expanded="true" signature="61294:61529" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="61312:61391" ph="select title... " />
+                <marker date="1531849019923" expanded="true" signature="61423:61441" ph="{fax_package... " />
+                <marker date="1531849019923" expanded="true" signature="62367:62602" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="62385:62464" ph="select title... " />
+                <marker date="1531849019923" expanded="true" signature="62496:62514" ph="{sms_package... " />
+                <marker date="1531849019923" expanded="true" signature="64052:64124" ph="DELETE FROM " />
+                <marker date="1531849019923" expanded="true" signature="65411:65913" ph="SELECT sum(a... " />
+                <marker date="1531849019923" expanded="true" signature="65463:65600" ph="select sum(n... " />
+                <marker date="1531849019923" expanded="true" signature="65496:65509" ph="{bookingtabl... " />
+                <marker date="1531849019923" expanded="true" signature="65631:65769" ph="select sum(n... " />
+                <marker date="1531849019923" expanded="true" signature="65664:65677" ph="{bookingtabl... " />
+                <marker date="1531849019923" expanded="true" signature="65804:65817" ph="{bookingtabl... " />
+                <marker date="1531849019923" expanded="true" signature="67220:67916" ph="SELECT a.mer... " />
+                <marker date="1531849019923" expanded="true" signature="67295:67431" ph="select sum(n... " />
+                <marker date="1531849019923" expanded="true" signature="67336:67349" ph="{bookingtabl... " />
+                <marker date="1531849019923" expanded="true" signature="67486:67620" ph="select sum(n... " />
+                <marker date="1531849019923" expanded="true" signature="67527:67540" ph="{bookingtabl... " />
+                <marker date="1531849019923" expanded="true" signature="67673:67808" ph="select sum(n... " />
+                <marker date="1531849019923" expanded="true" signature="67714:67727" ph="{bookingtabl... " />
+                <marker date="1531849019923" expanded="true" signature="68520:68690" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="68538:68618" ph="select resta... " />
+                <marker date="1531849019923" expanded="true" signature="68651:68665" ph="{fax_broadca... " />
+                <marker date="1531849019923" expanded="true" signature="69843:70043" ph="SELECT SQL_C... ${$sTable}" />
+                <marker date="1531849019923" expanded="true" signature="69887:69974" ph="select title... " />
+                <marker date="1531849019923" expanded="true" signature="70727:70945" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="79246:79638" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="79264:79340" ph="select resta... " />
+                <marker date="1531849019923" expanded="true" signature="79372:79463" ph="select conca... " />
+                <marker date="1531849019923" expanded="true" signature="79500:79513" ph="{bank_deposi... " />
+                <marker date="1531849019923" expanded="true" signature="79763:79975" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="83935:84194" ph="SELECT merch... " />
+                <marker date="1531849019923" expanded="true" signature="84080:84094" ph="{view_mercha... " />
+                <marker date="1531849019923" expanded="true" signature="85962:86321" ph="SELECT SQL_C... " />
+                <marker date="1531849019923" expanded="true" signature="86220:86234" ph="{view_mercha... " />
+                <marker date="1531849019923" expanded="true" signature="87452:87547" ph="SELECT * FRO... " />
+                <marker date="1531849019923" expanded="true" signature="88272:88453" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="92666:92941" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="92688:92769" ph="select count... " />
+                <marker date="1531849019923" expanded="true" signature="93060:93317" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="93082:93163" ph="select count... " />
+                <marker date="1531849019923" expanded="true" signature="93766:93982" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="95289:95510" ph="SELECT id,lo... " />
+                <marker date="1531849019923" expanded="true" signature="95409:95422" ph="{address_boo... " />
+                <marker date="1531849019923" expanded="true" signature="95790:95980" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="97110:97241" ph="UPDATE {{add... " />
+                <marker date="1531849019923" expanded="true" signature="97118:97131" ph="{address_boo... " />
+                <marker date="1531849019923" expanded="true" signature="98175:98458" ph="SELECT a.*, " />
+                <marker date="1531849019923" expanded="true" signature="98193:98282" ph="select conca... " />
+                <marker date="1531849019923" expanded="true" signature="98309:98389" ph="select resta... " />
+                <marker date="1531849019923" expanded="true" signature="98606:98802" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="108217:108271" ph="SELECT * FRO... " />
+                <marker date="1531849019923" expanded="true" signature="108396:108608" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="110668:110787" ph="SELECT DISTI... " />
+                <marker date="1531849019923" expanded="true" signature="117632:117714" ph="SELECT * FRO... " />
+                <marker date="1531849019923" expanded="true" signature="118045:118241" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="122408:122516" ph="..." />
+                <marker date="1531849019923" expanded="true" signature="124806:124878" ph="DELETE FROM " />
+                <marker date="1531849019923" expanded="true" signature="131458:131558" ph="SELECT SQL_C... " />
+                <marker date="1531849019923" expanded="true" signature="133287:133395" ph="SELECT SQL_C... " />
+                <marker date="1531849019923" expanded="true" signature="133330:133349" ph="{location_co... " />
+                <marker date="1531849019923" expanded="true" signature="134853:134931" ph="SELECT SQL_C... ${$sTable}" />
+                <marker date="1531849019923" expanded="true" signature="137768:138118" ph="SELECT SQL_C... " />
+                <marker date="1531849019923" expanded="true" signature="140617:140768" ph="SELECT SQL_C... ${$sTable}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rzr-init.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rzr-init.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="36" column="79" lean-forward="false" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AjaxAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/AjaxAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            <state relative-caret-position="494">
+              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
-                <marker date="1531833124839" expanded="true" signature="2457:2700" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="13568:13744" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="13588:13662" ph="select title... " />
-                <marker date="1531833124839" expanded="true" signature="13976:14194" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="18028:18060" ph="DElETE FROM " />
-                <marker date="1531833124839" expanded="true" signature="18380:18458" ph="DELETE FROM " />
-                <marker date="1531833124839" expanded="true" signature="18764:18803" ph="DELETE FROM " />
-                <marker date="1531833124839" expanded="true" signature="19938:20179" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="21297:21995" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="21337:21465" ph="select resta... " />
-                <marker date="1531833124839" expanded="true" signature="21528:21656" ph="select resta... " />
-                <marker date="1531833124839" expanded="true" signature="21732:21746" ph="{merchant_us... " />
-                <marker date="1531833124839" expanded="true" signature="23449:23571" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="23924:24132" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="30310:30439" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="30806:31020" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="34003:34146" ph="SELECT a.* F... " />
-                <marker date="1531833124839" expanded="true" signature="34024:34041" ph="{subcategory... " />
-                <marker date="1531833124839" expanded="true" signature="34513:34731" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="39247:39370" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="39813:40023" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="42032:42162" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="42527:42737" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="50668:50787" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="52316:52526" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="80888:81134" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="81688:81822" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="82394:82543" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="108450:108554" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="109073:109197" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="135054:135108" ph="UPDATE {{add... " />
-                <marker date="1531833124839" expanded="true" signature="135062:135075" ph="{address_boo... " />
-                <marker date="1531833124839" expanded="true" signature="138390:138557" ph="UPDATE {{cli... " />
-                <marker date="1531833124839" expanded="true" signature="153852:153925" ph="DELETE FROM " />
-                <marker date="1531833124839" expanded="true" signature="159354:159478" ph="Delete FROM " />
-                <marker date="1531833124839" expanded="true" signature="160868:161354" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="160894:161001" ph="select conca... " />
-                <marker date="1531833124839" expanded="true" signature="161047:161150" ph="select group... " />
-                <marker date="1531833124839" expanded="true" signature="161096:161110" ph="{order_detai... " />
-                <marker date="1531833124839" expanded="true" signature="171631:171943" ph="SELECT SUM(a... " />
-                <marker date="1531833124839" expanded="true" signature="171735:171754" ph="{view_order_... " />
-                <marker date="1531833124839" expanded="true" signature="172831:173191" ph="SELECT DATE_... " />
-                <marker date="1531833124839" expanded="true" signature="174068:174576" ph="SELECT a.ite... " />
-                <marker date="1531833124839" expanded="true" signature="174212:174231" ph="{view_order_... " />
-                <marker date="1531833124839" expanded="true" signature="175167:175826" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="175193:175300" ph="select conca... " />
-                <marker date="1531833124839" expanded="true" signature="175346:175442" ph="select conca... " />
-                <marker date="1531833124839" expanded="true" signature="175490:175593" ph="select group... " />
-                <marker date="1531833124839" expanded="true" signature="175539:175553" ph="{order_detai... " />
-                <marker date="1531833124839" expanded="true" signature="202073:202133" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="202424:202640" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="229063:229186" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="251878:252083" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="251904:251990" ph="select title... " />
-                <marker date="1531833124839" expanded="true" signature="254359:254697" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="254385:254471" ph="select title... " />
-                <marker date="1531833124839" expanded="true" signature="254518:254614" ph="select resta... " />
-                <marker date="1531833124839" expanded="true" signature="254666:254680" ph="{package_tra... " />
-                <marker date="1531833124839" expanded="true" signature="256237:256575" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="256263:256349" ph="select title... " />
-                <marker date="1531833124839" expanded="true" signature="256396:256492" ph="select resta... " />
-                <marker date="1531833124839" expanded="true" signature="256544:256558" ph="{package_tra... " />
-                <marker date="1531833124839" expanded="true" signature="263785:264336" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="263811:263897" ph="select title... " />
-                <marker date="1531833124839" expanded="true" signature="263944:264081" ph="select payme... " />
-                <marker date="1531833124839" expanded="true" signature="263982:263996" ph="{package_tra... " />
-                <marker date="1531833124839" expanded="true" signature="264128:264255" ph="select id fr... " />
-                <marker date="1531833124839" expanded="true" signature="264156:264170" ph="{package_tra... " />
-                <marker date="1531833124839" expanded="true" signature="268018:268139" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="268257:268483" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="269044:269103" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="269232:269462" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="271401:271455" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="271584:271808" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="275720:275791" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="275738:275751" ph="{order_statu... " />
-                <marker date="1531833124839" expanded="true" signature="275923:276143" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="280397:280519" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="280654:280875" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="289087:289153" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="289105:289120" ph="{rating_mean... " />
-                <marker date="1531833124839" expanded="true" signature="289294:289502" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="301047:301105" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="301246:301466" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="304156:304216" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="304357:304565" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="309685:309874" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="310668:310783" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="311634:311744" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="312294:312354" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="312483:312701" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="332279:332346" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="332643:332867" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="334925:335034" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="344643:344780" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="344661:344675" ph="{sms_broadca... " />
-                <marker date="1531833124839" expanded="true" signature="346534:346678" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="346552:346574" ph="{sms_broadca... " />
-                <marker date="1531833124839" expanded="true" signature="350136:350279" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="350154:350168" ph="{merchant_us... " />
-                <marker date="1531833124839" expanded="true" signature="351203:351431" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="354555:354837" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="354577:354694" ph="select count... " />
-                <marker date="1531833124839" expanded="true" signature="354616:354629" ph="{voucher_lis... " />
-                <marker date="1531833124839" expanded="true" signature="355248:355464" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="363489:363808" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="363567:363640" ph="select count... " />
-                <marker date="1531833124839" expanded="true" signature="364059:364337" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="364578:364683" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="367313:367666" ph="SELECT SQL_C... ${$sTable}" />
-                <marker date="1531833124839" expanded="true" signature="367366:367455" ph="select resta... " />
-                <marker date="1531833124839" expanded="true" signature="367492:367579" ph="select title... " />
-                <marker date="1531833124839" expanded="true" signature="368297:368485" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="380962:381092" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="380980:380993" ph="{bookingtabl... " />
-                <marker date="1531833124839" expanded="true" signature="381449:381665" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="386585:386673" ph="SELECT SQL_C... ${$sTable}" />
-                <marker date="1531833124839" expanded="true" signature="387324:387519" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="394387:395040" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="394413:394520" ph="select conca... " />
-                <marker date="1531833124839" expanded="true" signature="394566:394669" ph="select group... " />
-                <marker date="1531833124839" expanded="true" signature="394615:394629" ph="{order_detai... " />
-                <marker date="1531833124839" expanded="true" signature="394708:394804" ph="select resta... " />
-                <marker date="1531833124839" expanded="true" signature="398291:398799" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="402737:402908" ph="SELECT a.*, " />
-                <marker date="1531833124839" expanded="true" signature="402757:402835" ph="select resta... " />
-                <marker date="1531833124839" expanded="true" signature="402871:402884" ph="{bank_deposi... " />
-                <marker date="1531833124839" expanded="true" signature="416977:417034" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="416995:417012" ph="{payment_pro... " />
-                <marker date="1531833124839" expanded="true" signature="417163:417371" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="418669:418774" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="418909:419131" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="424398:424451" ph="SELECT * FRO... " />
-                <marker date="1531833124839" expanded="true" signature="424720:424856" ph="..." />
-                <marker date="1531833124839" expanded="true" signature="426978:427186" ph="SELECT SQL_C... ${$sTable}" />
-                <marker date="1531833124839" expanded="true" signature="427024:427108" ph="select resta... " />
+                <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VantivPayment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ptest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ptest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LitleOnlineRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/litle/payments-sdk/litle/sdk/LitleOnlineRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="879" column="34" lean-forward="true" selection-start-line="879" selection-start-column="34" selection-end-line="879" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -467,11 +277,11 @@
         <option value="$PROJECT_DIR$/Ptest.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/components/ScriptManagerCompress.php" />
-        <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
-        <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
         <option value="$PROJECT_DIR$/VantivPayment.php" />
         <option value="$PROJECT_DIR$/protected/views/store/payment-option.php" />
         <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
+        <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
+        <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
       </list>
     </option>
   </component>
@@ -719,13 +529,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00021" summary="JS update">
-      <created>1531833940066</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1531833940066</updated>
     </task>
     <task id="LOCAL-00022" summary="JS update">
       <created>1531834634082</created>
@@ -1063,11 +866,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531841806427</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Payment Done">
+      <created>1531841920856</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1531841920856</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12723000" />
+    <option name="totallyTimeSpent" value="13625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1385,6 +1195,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/ScriptManagerCompress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="103" column="56" lean-forward="false" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VantivPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/store/payment-option.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="581" column="70" lean-forward="false" selection-start-line="581" selection-start-column="56" selection-end-line="581" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="1722" column="0" lean-forward="true" selection-start-line="1722" selection-start-column="0" selection-end-line="1722" selection-end-column="0" />
+          <folding>
+            <element signature="e#42807#42843#0" expanded="false" />
+            <element signature="e#42887#43356#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -1538,26 +1383,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/ScriptManagerCompress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="103" column="56" lean-forward="false" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="36" column="79" lean-forward="false" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="3674" column="20" lean-forward="false" selection-start-line="3674" selection-start-column="20" selection-end-line="3674" selection-end-column="20" />
+        <state relative-caret-position="472">
+          <caret line="3668" column="53" lean-forward="true" selection-start-line="3668" selection-start-column="53" selection-end-line="3668" selection-end-column="53" />
           <folding>
             <element signature="e#44#3225#0#PHP" expanded="false" />
             <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -1644,122 +1473,108 @@
             <element signature="e#124427#125455#0#PHP" expanded="false" />
             <element signature="e#125459#126259#0#PHP" expanded="false" />
             <element signature="e#126263#127192#0#PHP" expanded="false" />
-            <marker date="1531840849455" expanded="true" signature="6569:7329" ph="SELECT a.*,b... " />
-            <marker date="1531840849455" expanded="true" signature="6611:6704" ph="select resta... " />
-            <marker date="1531840849455" expanded="true" signature="6753:6855" ph="select sum(t... " />
-            <marker date="1531840849455" expanded="true" signature="6915:7020" ph="select sum(t... " />
-            <marker date="1531840849455" expanded="true" signature="9558:9763" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="9581:9671" ph="select resta... " />
-            <marker date="1531840849455" expanded="true" signature="18510:18695" ph="SELECT * FRO... " />
-            <marker date="1531840849455" expanded="true" signature="20698:20831" ph="SELECT * FRO... " />
-            <marker date="1531840849455" expanded="true" signature="21181:21393" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="34577:34763" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="34595:34676" ph="select resta... " />
-            <marker date="1531840849455" expanded="true" signature="38214:38310" ph="SELECT count... " />
-            <marker date="1531840849455" expanded="true" signature="41021:41485" ph="SELECT a.res... " />
-            <marker date="1531840849455" expanded="true" signature="41053:41143" ph="select sum(t... " />
-            <marker date="1531840849455" expanded="true" signature="41177:41263" ph="select sum(t... " />
-            <marker date="1531840849455" expanded="true" signature="41302:41389" ph="select sum(m... " />
-            <marker date="1531840849455" expanded="true" signature="44069:44134" ph="SELECT * FRO... " />
-            <marker date="1531840849455" expanded="true" signature="44412:44624" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="54962:55270" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="54980:55073" ph="select resta... " />
-            <marker date="1531840849455" expanded="true" signature="55102:55193" ph="select title... " />
-            <marker date="1531840849455" expanded="true" signature="55229:55247" ph="{fax_package... " />
-            <marker date="1531840849455" expanded="true" signature="55395:55591" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="59835:59952" ph="SELECT * FRO... " />
-            <marker date="1531840849455" expanded="true" signature="59852:59866" ph="{fax_broadca... " />
-            <marker date="1531840849455" expanded="true" signature="61294:61529" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="61312:61391" ph="select title... " />
-            <marker date="1531840849455" expanded="true" signature="61423:61441" ph="{fax_package... " />
-            <marker date="1531840849455" expanded="true" signature="62367:62602" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="62385:62464" ph="select title... " />
-            <marker date="1531840849455" expanded="true" signature="62496:62514" ph="{sms_package... " />
-            <marker date="1531840849455" expanded="true" signature="64052:64124" ph="DELETE FROM " />
-            <marker date="1531840849455" expanded="true" signature="65411:65913" ph="SELECT sum(a... " />
-            <marker date="1531840849455" expanded="true" signature="65463:65600" ph="select sum(n... " />
-            <marker date="1531840849455" expanded="true" signature="65496:65509" ph="{bookingtabl... " />
-            <marker date="1531840849455" expanded="true" signature="65631:65769" ph="select sum(n... " />
-            <marker date="1531840849455" expanded="true" signature="65664:65677" ph="{bookingtabl... " />
-            <marker date="1531840849455" expanded="true" signature="65804:65817" ph="{bookingtabl... " />
-            <marker date="1531840849455" expanded="true" signature="67220:67916" ph="SELECT a.mer... " />
-            <marker date="1531840849455" expanded="true" signature="67295:67431" ph="select sum(n... " />
-            <marker date="1531840849455" expanded="true" signature="67336:67349" ph="{bookingtabl... " />
-            <marker date="1531840849455" expanded="true" signature="67486:67620" ph="select sum(n... " />
-            <marker date="1531840849455" expanded="true" signature="67527:67540" ph="{bookingtabl... " />
-            <marker date="1531840849455" expanded="true" signature="67673:67808" ph="select sum(n... " />
-            <marker date="1531840849455" expanded="true" signature="67714:67727" ph="{bookingtabl... " />
-            <marker date="1531840849455" expanded="true" signature="68520:68690" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="68538:68618" ph="select resta... " />
-            <marker date="1531840849455" expanded="true" signature="68651:68665" ph="{fax_broadca... " />
-            <marker date="1531840849455" expanded="true" signature="69843:70043" ph="SELECT SQL_C... ${$sTable}" />
-            <marker date="1531840849455" expanded="true" signature="69887:69974" ph="select title... " />
-            <marker date="1531840849455" expanded="true" signature="70727:70945" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="79246:79638" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="79264:79340" ph="select resta... " />
-            <marker date="1531840849455" expanded="true" signature="79372:79463" ph="select conca... " />
-            <marker date="1531840849455" expanded="true" signature="79500:79513" ph="{bank_deposi... " />
-            <marker date="1531840849455" expanded="true" signature="79763:79975" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="83935:84194" ph="SELECT merch... " />
-            <marker date="1531840849455" expanded="true" signature="84080:84094" ph="{view_mercha... " />
-            <marker date="1531840849455" expanded="true" signature="85962:86321" ph="SELECT SQL_C... " />
-            <marker date="1531840849455" expanded="true" signature="86220:86234" ph="{view_mercha... " />
-            <marker date="1531840849455" expanded="true" signature="87452:87547" ph="SELECT * FRO... " />
-            <marker date="1531840849455" expanded="true" signature="88272:88453" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="92666:92941" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="92688:92769" ph="select count... " />
-            <marker date="1531840849455" expanded="true" signature="93060:93317" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="93082:93163" ph="select count... " />
-            <marker date="1531840849455" expanded="true" signature="93766:93982" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="95289:95510" ph="SELECT id,lo... " />
-            <marker date="1531840849455" expanded="true" signature="95409:95422" ph="{address_boo... " />
-            <marker date="1531840849455" expanded="true" signature="95790:95980" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="97110:97241" ph="UPDATE {{add... " />
-            <marker date="1531840849455" expanded="true" signature="97118:97131" ph="{address_boo... " />
-            <marker date="1531840849455" expanded="true" signature="98175:98458" ph="SELECT a.*, " />
-            <marker date="1531840849455" expanded="true" signature="98193:98282" ph="select conca... " />
-            <marker date="1531840849455" expanded="true" signature="98309:98389" ph="select resta... " />
-            <marker date="1531840849455" expanded="true" signature="98606:98802" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="108217:108271" ph="SELECT * FRO... " />
-            <marker date="1531840849455" expanded="true" signature="108396:108608" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="110668:110787" ph="SELECT DISTI... " />
-            <marker date="1531840849455" expanded="true" signature="117632:117714" ph="SELECT * FRO... " />
-            <marker date="1531840849455" expanded="true" signature="118045:118241" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="122408:122516" ph="..." />
-            <marker date="1531840849455" expanded="true" signature="124806:124878" ph="DELETE FROM " />
-            <marker date="1531840849455" expanded="true" signature="131467:131567" ph="SELECT SQL_C... " />
-            <marker date="1531840849455" expanded="true" signature="133296:133404" ph="SELECT SQL_C... " />
-            <marker date="1531840849455" expanded="true" signature="133339:133358" ph="{location_co... " />
-            <marker date="1531840849455" expanded="true" signature="134862:134940" ph="SELECT SQL_C... ${$sTable}" />
-            <marker date="1531840849455" expanded="true" signature="137777:138127" ph="SELECT SQL_C... " />
-            <marker date="1531840849455" expanded="true" signature="140626:140777" ph="SELECT SQL_C... ${$sTable}" />
+            <marker date="1531849019923" expanded="true" signature="6569:7329" ph="SELECT a.*,b... " />
+            <marker date="1531849019923" expanded="true" signature="6611:6704" ph="select resta... " />
+            <marker date="1531849019923" expanded="true" signature="6753:6855" ph="select sum(t... " />
+            <marker date="1531849019923" expanded="true" signature="6915:7020" ph="select sum(t... " />
+            <marker date="1531849019923" expanded="true" signature="9558:9763" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="9581:9671" ph="select resta... " />
+            <marker date="1531849019923" expanded="true" signature="18510:18695" ph="SELECT * FRO... " />
+            <marker date="1531849019923" expanded="true" signature="20698:20831" ph="SELECT * FRO... " />
+            <marker date="1531849019923" expanded="true" signature="21181:21393" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="34577:34763" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="34595:34676" ph="select resta... " />
+            <marker date="1531849019923" expanded="true" signature="38214:38310" ph="SELECT count... " />
+            <marker date="1531849019923" expanded="true" signature="41021:41485" ph="SELECT a.res... " />
+            <marker date="1531849019923" expanded="true" signature="41053:41143" ph="select sum(t... " />
+            <marker date="1531849019923" expanded="true" signature="41177:41263" ph="select sum(t... " />
+            <marker date="1531849019923" expanded="true" signature="41302:41389" ph="select sum(m... " />
+            <marker date="1531849019923" expanded="true" signature="44069:44134" ph="SELECT * FRO... " />
+            <marker date="1531849019923" expanded="true" signature="44412:44624" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="54962:55270" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="54980:55073" ph="select resta... " />
+            <marker date="1531849019923" expanded="true" signature="55102:55193" ph="select title... " />
+            <marker date="1531849019923" expanded="true" signature="55229:55247" ph="{fax_package... " />
+            <marker date="1531849019923" expanded="true" signature="55395:55591" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="59835:59952" ph="SELECT * FRO... " />
+            <marker date="1531849019923" expanded="true" signature="59852:59866" ph="{fax_broadca... " />
+            <marker date="1531849019923" expanded="true" signature="61294:61529" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="61312:61391" ph="select title... " />
+            <marker date="1531849019923" expanded="true" signature="61423:61441" ph="{fax_package... " />
+            <marker date="1531849019923" expanded="true" signature="62367:62602" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="62385:62464" ph="select title... " />
+            <marker date="1531849019923" expanded="true" signature="62496:62514" ph="{sms_package... " />
+            <marker date="1531849019923" expanded="true" signature="64052:64124" ph="DELETE FROM " />
+            <marker date="1531849019923" expanded="true" signature="65411:65913" ph="SELECT sum(a... " />
+            <marker date="1531849019923" expanded="true" signature="65463:65600" ph="select sum(n... " />
+            <marker date="1531849019923" expanded="true" signature="65496:65509" ph="{bookingtabl... " />
+            <marker date="1531849019923" expanded="true" signature="65631:65769" ph="select sum(n... " />
+            <marker date="1531849019923" expanded="true" signature="65664:65677" ph="{bookingtabl... " />
+            <marker date="1531849019923" expanded="true" signature="65804:65817" ph="{bookingtabl... " />
+            <marker date="1531849019923" expanded="true" signature="67220:67916" ph="SELECT a.mer... " />
+            <marker date="1531849019923" expanded="true" signature="67295:67431" ph="select sum(n... " />
+            <marker date="1531849019923" expanded="true" signature="67336:67349" ph="{bookingtabl... " />
+            <marker date="1531849019923" expanded="true" signature="67486:67620" ph="select sum(n... " />
+            <marker date="1531849019923" expanded="true" signature="67527:67540" ph="{bookingtabl... " />
+            <marker date="1531849019923" expanded="true" signature="67673:67808" ph="select sum(n... " />
+            <marker date="1531849019923" expanded="true" signature="67714:67727" ph="{bookingtabl... " />
+            <marker date="1531849019923" expanded="true" signature="68520:68690" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="68538:68618" ph="select resta... " />
+            <marker date="1531849019923" expanded="true" signature="68651:68665" ph="{fax_broadca... " />
+            <marker date="1531849019923" expanded="true" signature="69843:70043" ph="SELECT SQL_C... ${$sTable}" />
+            <marker date="1531849019923" expanded="true" signature="69887:69974" ph="select title... " />
+            <marker date="1531849019923" expanded="true" signature="70727:70945" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="79246:79638" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="79264:79340" ph="select resta... " />
+            <marker date="1531849019923" expanded="true" signature="79372:79463" ph="select conca... " />
+            <marker date="1531849019923" expanded="true" signature="79500:79513" ph="{bank_deposi... " />
+            <marker date="1531849019923" expanded="true" signature="79763:79975" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="83935:84194" ph="SELECT merch... " />
+            <marker date="1531849019923" expanded="true" signature="84080:84094" ph="{view_mercha... " />
+            <marker date="1531849019923" expanded="true" signature="85962:86321" ph="SELECT SQL_C... " />
+            <marker date="1531849019923" expanded="true" signature="86220:86234" ph="{view_mercha... " />
+            <marker date="1531849019923" expanded="true" signature="87452:87547" ph="SELECT * FRO... " />
+            <marker date="1531849019923" expanded="true" signature="88272:88453" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="92666:92941" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="92688:92769" ph="select count... " />
+            <marker date="1531849019923" expanded="true" signature="93060:93317" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="93082:93163" ph="select count... " />
+            <marker date="1531849019923" expanded="true" signature="93766:93982" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="95289:95510" ph="SELECT id,lo... " />
+            <marker date="1531849019923" expanded="true" signature="95409:95422" ph="{address_boo... " />
+            <marker date="1531849019923" expanded="true" signature="95790:95980" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="97110:97241" ph="UPDATE {{add... " />
+            <marker date="1531849019923" expanded="true" signature="97118:97131" ph="{address_boo... " />
+            <marker date="1531849019923" expanded="true" signature="98175:98458" ph="SELECT a.*, " />
+            <marker date="1531849019923" expanded="true" signature="98193:98282" ph="select conca... " />
+            <marker date="1531849019923" expanded="true" signature="98309:98389" ph="select resta... " />
+            <marker date="1531849019923" expanded="true" signature="98606:98802" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="108217:108271" ph="SELECT * FRO... " />
+            <marker date="1531849019923" expanded="true" signature="108396:108608" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="110668:110787" ph="SELECT DISTI... " />
+            <marker date="1531849019923" expanded="true" signature="117632:117714" ph="SELECT * FRO... " />
+            <marker date="1531849019923" expanded="true" signature="118045:118241" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="122408:122516" ph="..." />
+            <marker date="1531849019923" expanded="true" signature="124806:124878" ph="DELETE FROM " />
+            <marker date="1531849019923" expanded="true" signature="131458:131558" ph="SELECT SQL_C... " />
+            <marker date="1531849019923" expanded="true" signature="133287:133395" ph="SELECT SQL_C... " />
+            <marker date="1531849019923" expanded="true" signature="133330:133349" ph="{location_co... " />
+            <marker date="1531849019923" expanded="true" signature="134853:134931" ph="SELECT SQL_C... ${$sTable}" />
+            <marker date="1531849019923" expanded="true" signature="137768:138118" ph="SELECT SQL_C... " />
+            <marker date="1531849019923" expanded="true" signature="140617:140768" ph="SELECT SQL_C... ${$sTable}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VantivPayment.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/store/payment-option.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="581" column="70" lean-forward="false" selection-start-line="581" selection-start-column="56" selection-end-line="581" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="1672" column="0" lean-forward="true" selection-start-line="1672" selection-start-column="0" selection-end-line="1706" selection-end-column="0" />
+        <state relative-caret-position="494">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="e#42807#42843#0" expanded="false" />
-            <element signature="e#42887#43356#0" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

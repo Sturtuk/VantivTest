@@ -48,46 +48,32 @@ $this->renderPartial('/front/order-progress-bar',array(
 
                 <div class="form-body">
 
-                    <!-- Card Number -->
-                    <input type="text" name="card-number" class="card-number" placeholder="Card Number" data-validation="required" data-validation-allowing="visa, mastercard, amex">
+                    <label class="floatinglabel flexwidthhalfcc responsiveccfullwidth card-number card-number-color">
+                        <span style="display: none;">Card Number</span>
+                        <input class="form-control valid_cc_number unknown" type="text" name="cc_number" value="" autocomplete="off" placeholder="Card Number" required="" style="">
+                        <i class=""></i>
+                        <div class="input-validation-error">Invalid Card Number</div>
+                    </label>
 
                     <!-- Date Field -->
                     <div class="date-field">
-                        <div class="month">
-                            <select data-validation="required" name="Month">
-                                <option value="01">January</option>
-                                <option value="02">February</option>
-                                <option value="03">March</option>
-                                <option value="04">April</option>
-                                <option value="05">May</option>
-                                <option value="06">June</option>
-                                <option value="07">July</option>
-                                <option value="08">August</option>
-                                <option value="09">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select>
-                        </div>
-                        <div class="year">
-                            <select data-validation="required" name="Year">
+                        <label class="floatinglabel flexwidthquartercc responsiveccfullwidth expiry-date">
+                            <span style="display: inline;">MM/YY</span>
+                            <input class="form-control valid_inputCardExpiry" type="text" name="cc_expiry" value="" placeholder="MM/YY" autocomplete="off" maxlength="7" required="" style="padding-top: 14px;">
+                            <i></i>
+                            <div class="input-validation-error">Invalid Date</div>
+                        </label>
 
-                                <option value="21">2021</option>
-                                <option value="22">2022</option>
-                                <option value="23">2023</option>
-                                <option value="24">2024</option>
-                            </select>
-                        </div>
                     </div>
 
                     <!-- Card Verification Field -->
                     <div class="card-verification">
-                        <div class="cvv-input">
-                            <input name="ccv" data-validation="required" type="text" placeholder="CVV">
-                        </div>
-                        <div class="cvv-details">
-                            <p>3 or 4 digits usually found <br> on the signature strip</p>
-                        </div>
+                        <label class="floatinglabel flexwidthquartercc responsiveccfullwidth cvv-number">
+                            <span style="display: none;">CVV</span>
+                            <input class="form-control valid_cc_cscv" type="text" name="cc_cscv" value="" autocomplete="off" placeholder="CVV" maxlength="4" required="">
+                            <i></i>
+                            <div class="input-validation-error">Invalid CVV</div>
+                        </label>
                     </div>
 
                     <input type="button" value="Process Payment" id="VantivPayBtn" >

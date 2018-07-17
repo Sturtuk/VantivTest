@@ -1718,3 +1718,100 @@ $(window).scroll(function(e){
 			  } 
 			});
 
+(function(){var n,t,r,e=[].indexOf||function(n){for(var t=0,r=this.length;t<r;t++)if(t in this&&this[t]===n)return t;return-1};r=function(){function n(){this.trie={}}return n.prototype.push=function(n){var t,r,e,i,a,l,u;for(n=n.toString(),a=this.trie,u=[],r=e=0,i=(l=n.split("")).length;e<i;r=++e)null==a[t=l[r]]&&(r===n.length-1?a[t]=null:a[t]={}),u.push(a=a[t]);return u},n.prototype.find=function(n){var t,r,e,i,a,l;for(n=n.toString(),a=this.trie,r=e=0,i=(l=n.split("")).length;e<i;r=++e){if(t=l[r],!a.hasOwnProperty(t))return!1;if(null===a[t])return!0;a=a[t]}},n}(),t=function(){function n(n){if(this.trie=n,this.trie.constructor!==r)throw Error("Range constructor requires a Trie parameter")}return n.rangeWithString=function(t){var e,i,a,l,u,o,c,h,f;if("string"!=typeof t)throw Error("rangeWithString requires a string parameter");for(t=(t=t.replace(/ /g,"")).split(","),f=new r,e=0,a=t.length;e<a;e++)if(u=(o=t[e]).match(/^(\d+)-(\d+)$/))for(l=i=c=u[1],h=u[2];c<=h?i<=h:i>=h;l=c<=h?++i:--i)f.push(l);else{if(!o.match(/^\d+$/))throw Error("Invalid range '"+u+"'");f.push(o)}return new n(f)},n.prototype.match=function(n){return this.trie.find(n)},n}(),(n=jQuery).fn.validateCreditCard=function(r,i){var a,l,u,o,c,h,f,s,g,p,v,d,m,y,_,w;for(o=[{name:"amex",range:"34,37",valid_length:[15,16,17,18,19]},{name:"jcb",range:"3528-3589",valid_length:[16,17,18,19]},{name:"visa",range:"4",valid_length:[13,14,15,16,17,18,19]},{name:"mastercard",range:"51-55,2221-2720",valid_length:[16,17,18,19]},{name:"discover",range:"6011, 622126-622925, 644-649, 65",valid_length:[16,17,18,19]},{name:"unionpay",range:"62",valid_length:[16,17,18,19]}],a=!1,r&&("object"==typeof r?(i=r,a=!1,r=null):"function"==typeof r&&(a=!0)),null==i&&(i={}),null==i.accept&&(i.accept=function(){var n,t,r;for(r=[],n=0,t=o.length;n<t;n++)l=o[n],r.push(l.name);return r}()),s=0,g=(v=i.accept).length;s<g;s++)if(u=v[s],e.call(function(){var n,t,r;for(r=[],n=0,t=o.length;n<t;n++)l=o[n],r.push(l.name);return r}(),u)<0)throw Error("Credit card type '"+u+"' is not supported");return c=function(n){var r,a,c;for(r=0,a=(c=function(){var n,t,r,a;for(a=[],n=0,t=o.length;n<t;n++)r=(l=o[n]).name,e.call(i.accept,r)>=0&&a.push(l);return a}()).length;r<a;r++)if(u=c[r],t.rangeWithString(u.range).match(n))return u;return null},f=function(n){var t,r,e,i,a,l;for(l=0,i=r=0,e=(a=n.split("").reverse()).length;r<e;i=++r)t=+(t=a[i]),l+=i%2?(t*=2)<10?t:t-9:t;return l%10==0},h=function(n,t){var r;return r=n.length,e.call(t.valid_length,r)>=0},m=function(n){var t,r;return r=!1,t=!1,null!=(u=c(n))&&(r=f(n),t=h(n,u)),{card_type:u,valid:r&&t,luhn_valid:r,length_valid:t}},y=this,d=function(){var t;return t=p(n(y).val()),m(t)},p=function(n){return n.replace(/[ -]/g,"")},a?(this.on("input.jccv",(_=this,function(){return n(_).off("keyup.jccv"),r.call(_,d())})),this.on("keyup.jccv",(w=this,function(){return r.call(w,d())})),r.call(this,d()),this):d()}}).call(this);
+
+
+
+var expiryDate, validateExpiryDate, cvvNumber,
+    expiry_icon = $('.valid_inputCardExpiry').closest('.expiry-date').find('i'),
+    cvv_icon = $('.valid_cc_cscv').closest('.cvv-number').find('i');
+
+// Check MM/YY
+function checkExpiry()
+{
+    expiryDate = $.payment.cardExpiryVal($('.valid_inputCardExpiry').val());
+    validateExpiryDate = $.payment.validateCardExpiry(expiryDate.month, expiryDate.year);
+
+    if (validateExpiryDate == true || (isNaN(expiryDate.month) && isNaN(expiryDate.year)))
+    {
+        hideExpiryError();
+    }
+    else
+    {
+        expiry_icon.closest('.expiry-date').addClass('validation-error');
+    }
+}
+
+function hideExpiryError()
+{
+    expiry_icon.removeClass();
+    expiry_icon.closest('.expiry-date').removeClass('validation-error');
+}
+
+function checkCVV()
+{
+    cvvNumber = $.payment.validateCardCVC($('.valid_cc_cscv').val());
+    if ( cvvNumber == true || !$('.valid_cc_cscv').val() )
+    {
+        hideCVVError();
+    }
+    else
+    {
+        cvv_icon.closest('.cvv-number').addClass('validation-error');
+    }
+}
+
+function hideCVVError()
+{
+    cvv_icon.removeClass();
+    cvv_icon.closest('.cvv-number').removeClass('validation-error');
+}
+
+function validateCC()
+{
+    $('.valid_cc_number').validateCreditCard(function(result)
+    {
+        var cc_icon = $('.valid_cc_number').closest('.card-number').find('i'), cc_name;
+        var cc_empty = $('input[name=cc_number]').val() == '';
+
+        if (cc_empty)
+        {
+            cc_icon.removeClass();
+            cc_icon.closest('.card-number').removeClass('validation-error');
+        }
+        else
+        {
+            if ( result.card_type == null && !cc_empty )
+            {
+                cc_icon.removeClass();
+                cc_icon.closest('.card-number').addClass('validation-error');
+                cc_icon.addClass('input-validation-icon zmdi zmdi-alert-circle-o');
+            }
+            else
+            {
+                cards = [];
+
+                cards.push('amex');
+                cards.push('discover');
+                cards.push('jcb');
+                cards.push('mastercard');
+                cards.push('visa');
+                cards.push('unionpay');
+
+                if ($.inArray(result.card_type.name, cards) !== -1)
+                {
+                    cc_icon.closest('.card-number').removeClass('validation-error');
+                    cc_icon.removeClass();
+                    cc_icon.addClass('icon ccicon_'+result.card_type.name);
+                }
+                else
+                {
+                    cc_icon.removeClass();
+                    cc_icon.addClass('input-validation-icon zmdi zmdi-alert-circle-o');
+                    cc_icon.closest('.card-number').addClass('validation-error');
+                }
+            }
+        }
+    });
+}
+
