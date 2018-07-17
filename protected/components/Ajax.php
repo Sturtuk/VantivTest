@@ -3672,31 +3672,11 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                 ]
         ];
 
-
-
         $VApp->PaymentData($sale_info);
-
+        die();
     }
 
-    function httpPost($url,$params)
-    {
 
-        $fields_string = http_build_query($params);
-
-        $ch = curl_init();
-
-        curl_setopt($ch,CURLOPT_URL,$url);
-        curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
-        curl_setopt($ch,CURLOPT_HEADER, false);
-        curl_setopt($ch, CURLOPT_POST, count($params));
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
-
-        $output=curl_exec($ch);
-
-        curl_close($ch);
-        return $output;
-
-    }
 
 	public function InitPlaceOrder()
 	{
