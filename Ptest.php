@@ -1,5 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
+
+print_r($_REQUEST);
 #sale
 $sale_info = array(
       'user' => 'JoesStore',
