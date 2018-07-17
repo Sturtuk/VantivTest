@@ -1675,7 +1675,9 @@ if($trigger !== event.target && !$trigger.has(event.target).length){
             url: '/admin/ajax',
             method: 'post',
             data: Postdata
-        })
+        }).done(resp){
+        	console.log(resp);
+		}
     })
 
 

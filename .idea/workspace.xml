@@ -5,8 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/store-v3.js" afterPath="$PROJECT_DIR$/assets/js/store-v3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/ScriptManagerCompress.php" afterPath="$PROJECT_DIR$/protected/components/ScriptManagerCompress.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/rzr-init.php" afterPath="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,17 +15,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="1676" column="16" lean-forward="true" selection-start-line="1676" selection-start-column="16" selection-end-line="1676" selection-end-column="16" />
+            <state relative-caret-position="445">
+              <caret line="1678" column="30" lean-forward="true" selection-start-line="1678" selection-start-column="30" selection-end-line="1678" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptManagerCompress.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScriptManagerCompress.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/ScriptManagerCompress.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
@@ -467,8 +465,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
         <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
-        <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
         <option value="$PROJECT_DIR$/protected/components/ScriptManagerCompress.php" />
+        <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
       </list>
     </option>
   </component>
@@ -716,13 +714,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00011" summary="Autoload Register">
-      <created>1531832815597</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1531832815597</updated>
     </task>
     <task id="LOCAL-00012" summary="Autoload Register">
       <created>1531832965619</created>
@@ -1060,11 +1051,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531840008736</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Payment Done">
+      <created>1531840479764</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1531840479764</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11389000" />
+    <option name="totallyTimeSpent" value="11432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1551,6 +1549,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/ScriptManagerCompress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="103" column="56" lean-forward="false" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1736,16 +1742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="1676" column="16" lean-forward="true" selection-start-line="1676" selection-start-column="16" selection-end-line="1676" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/ScriptManagerCompress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="103" column="56" lean-forward="false" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
+        <state relative-caret-position="445">
+          <caret line="1678" column="30" lean-forward="true" selection-start-line="1678" selection-start-column="30" selection-end-line="1678" selection-end-column="30" />
           <folding />
         </state>
       </provider>
