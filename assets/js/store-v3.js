@@ -1664,42 +1664,47 @@ if($trigger !== event.target && !$trigger.has(event.target).length){
 }
 
 
-    $(".submitOrderPay").on('click',function(){
-        $("#frm-delivery").submit();
-    })
 
 
-    $("#VantivPayBtn").on('click',function(){
-
-        var Postdata = $("#ProcessVntPay").serialize();
-        $.ajax({
-            url: '/admin/ajax',
-            method: 'post',
-            data: Postdata
-        }).done(function(resp){
-            console.log(resp);
-            var d = JSON.parse(resp);
-
-            if(d.status == '000') {
-                swal('info',d.msg,'success');
-                window.location = 'receipt?id='+d.OrderID;
-            }
-
-            if(d.status == '010') {
-                swal('info',d.msg,'success');
-            }
-
-
-        })
-
-
-    })
-
-	//VantivPayBtn
 
 
 
 });
+
+//VantivPayBtn
+
+
+$(".submitOrderPay").on('click',function(){
+    $("#frm-delivery").submit();
+})
+
+
+$("#VantivPayBtn").on('click',function(){
+
+    var Postdata = $("#ProcessVntPay").serialize();
+    $.ajax({
+        url: '/admin/ajax',
+        method: 'post',
+        data: Postdata
+    }).done(function(resp){
+        console.log(resp);
+        var d = JSON.parse(resp);
+
+        if(d.status == '000') {
+            swal('info',d.msg,'success');
+            window.location = 'receipt?id='+d.OrderID;
+        }
+
+        if(d.status == '010') {
+            swal('info',d.msg,'success');
+        }
+
+
+    })
+
+
+})
+
 
 $(window).scroll(function(e){ 
 			  var $el = $('.food_fix'); 

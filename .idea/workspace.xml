@@ -18,9 +18,12 @@
       <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="1688" column="31" lean-forward="false" selection-start-line="1688" selection-start-column="31" selection-end-line="1688" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="296">
+              <caret line="1672" column="0" lean-forward="true" selection-start-line="1672" selection-start-column="0" selection-end-line="1706" selection-end-column="0" />
+              <folding>
+                <element signature="e#42807#42843#0" expanded="false" />
+                <element signature="e#42887#43356#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -717,13 +720,6 @@
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
     </task>
-    <task id="LOCAL-00020" summary="JS update">
-      <created>1531833811376</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1531833811376</updated>
-    </task>
     <task id="LOCAL-00021" summary="JS update">
       <created>1531833940066</created>
       <option name="number" value="00021" />
@@ -1060,11 +1056,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531841776604</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Payment Done">
+      <created>1531841806427</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1531841806427</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12618000" />
+    <option name="totallyTimeSpent" value="12723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1752,9 +1755,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="1688" column="31" lean-forward="false" selection-start-line="1688" selection-start-column="31" selection-end-line="1688" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="296">
+          <caret line="1672" column="0" lean-forward="true" selection-start-line="1672" selection-start-column="0" selection-end-line="1706" selection-end-column="0" />
+          <folding>
+            <element signature="e#42807#42843#0" expanded="false" />
+            <element signature="e#42887#43356#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
