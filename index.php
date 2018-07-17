@@ -37,7 +37,8 @@
  *   Last Update : 28 August 2017 Version 4.3
  ***********************************************************/
 ini_set("display_errors","on");
-require_once 'vendor/autoload.php';
+$loader = require 'vendor/autoload.php';
+$loader->register();
 
 define('YII_ENABLE_ERROR_HANDLER', false);
 define('YII_ENABLE_EXCEPTION_HANDLER', false);
