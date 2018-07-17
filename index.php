@@ -47,6 +47,5 @@ ini_set("display_errors",true);
 require_once(dirname(__FILE__).'/yiiframework/yii.php');
 $config=dirname(__FILE__).'/protected/config/main.php';
 
-require_once 'VantivPayment.php';
 // create a Web application instance and run
 Yii::createWebApplication($config)->run();
