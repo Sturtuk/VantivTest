@@ -1,5 +1,4 @@
 <?php
-namespace App;
 /*******************************************
 @author : bastikikang 
 @author email: bastikikang@gmail.com
@@ -37,7 +36,7 @@ namespace App;
  *   Last Update : 15 June 2017 Version 4.2
  *   Last Update : 28 August 2017 Version 4.3
  ***********************************************************/
-ini_set("display_errors","on");
+
 $loader = require 'vendor/autoload.php';
 $loader->register();
 
