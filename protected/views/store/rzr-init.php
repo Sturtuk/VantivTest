@@ -49,32 +49,23 @@ $this->renderPartial('/front/order-progress-bar',array(
                 <div class="form-body">
 
                     <label class="floatinglabel flexwidthhalfcc responsiveccfullwidth card-number card-number-color">
-                        <span style="display: none;">Card Number</span>
-                        <input class="form-control valid_cc_number unknown" type="text" name="cc_number" value="" autocomplete="off" placeholder="Card Number" required="" style="">
-                        <i class=""></i>
+                        <span>Card Number</span>
+                        <input class="form-control valid_cc_number" type="text" name="cc_number" value="" autocomplete="off" placeholder="Card Number" required>
+                        <i></i>
                         <div class="input-validation-error">Invalid Card Number</div>
                     </label>
-
-                    <!-- Date Field -->
-                    <div class="date-field">
-                        <label class="floatinglabel flexwidthquartercc responsiveccfullwidth expiry-date">
-                            <span style="display: inline;">MM/YY</span>
-                            <input class="form-control valid_inputCardExpiry" type="text" name="cc_expiry" value="" placeholder="MM/YY" autocomplete="off" maxlength="7" required="" style="padding-top: 14px;">
-                            <i></i>
-                            <div class="input-validation-error">Invalid Date</div>
-                        </label>
-
-                    </div>
-
-                    <!-- Card Verification Field -->
-                    <div class="card-verification">
-                        <label class="floatinglabel flexwidthquartercc responsiveccfullwidth cvv-number">
-                            <span style="display: none;">CVV</span>
-                            <input class="form-control valid_cc_cscv" type="text" name="cc_cscv" value="" autocomplete="off" placeholder="CVV" maxlength="4" required="">
-                            <i></i>
-                            <div class="input-validation-error">Invalid CVV</div>
-                        </label>
-                    </div>
+                    <label class="floatinglabel flexwidthquartercc responsiveccfullwidth expiry-date">
+                        <span>MM/YY</span>
+                        <input class="form-control valid_inputCardExpiry" type="text" name="cc_expiry" value="" placeholder="MM/YY" autocomplete="off" maxlength="7" required>
+                        <i></i>
+                        <div class="input-validation-error">Invalid Date</div>
+                    </label>
+                    <label class="floatinglabel flexwidthquartercc responsiveccfullwidth cvv-number">
+                        <span>CVV</span>
+                        <input class="form-control valid_cc_cscv" type="text" name="cc_cscv" value="" autocomplete="off" placeholder="CVV" maxlength="4" required>
+                        <i></i>
+                        <div class="input-validation-error">Invalid CVV</div>
+                    </label>
 
                     <input type="button" value="Process Payment" id="VantivPayBtn" >
 
