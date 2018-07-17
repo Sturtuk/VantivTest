@@ -235,33 +235,17 @@
 //         if($trigger !== event.target && !$trigger.has(event.target).length){
 //             $(".takkk").slideUp("fast");
 // 				$(".ee").removeClass("change");
-//         }            
+//         }
 //     });
 
-// 	$( function() {
-// 		$( "#dialog" ).dialog({
-// 		  autoOpen: false,
-// 		  show: {
-		   
-// 			duration: 1000
-// 		  },
-// 		  hide: {
-		  
-// 			duration: 1000
-// 		  }
-// 		});
-	 
-// 		$( "#opener" ).on( "click", function() {
-// 		  $( "#dialog" ).dialog( "open" );
-// 		});
-// 	});
+
 
 //  $(document).ready(function() {
 
 //   function getcartcount(){
 //     setTimeout(function(){
 //       var cnt = 0;
-//     jQuery("body .item-order-wrap.item-hello.nagu .a").each(function(){ 
+//     jQuery("body .item-order-wrap.item-hello.nagu .a").each(function(){
 //      cnt += parseInt(jQuery(this).text());
 //      $('.cart-icon').html(cnt);
 //     });
@@ -270,6 +254,24 @@
 //   getcartcount();
 
 // });
+
+$( function() {
+    $( "#dialog" ).dialog({
+        autoOpen: false,
+        show: {
+
+            duration: 1000
+        },
+        hide: {
+
+            duration: 1000
+        }
+    });
+
+    $( "#opener" ).on( "click", function() {
+        $( "#dialog" ).dialog( "open" );
+    });
+});
 </script>
 
 
