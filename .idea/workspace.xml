@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/store-v3.js" afterPath="$PROJECT_DIR$/assets/js/store-v3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/payment-option.php" afterPath="$PROJECT_DIR$/protected/views/store/payment-option.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="1670" column="0" lean-forward="true" selection-start-line="1670" selection-start-column="0" selection-end-line="1670" selection-end-column="0" />
+            <state relative-caret-position="524">
+              <caret line="1688" column="31" lean-forward="false" selection-start-line="1688" selection-start-column="31" selection-end-line="1688" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -718,13 +717,6 @@
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
     </task>
-    <task id="LOCAL-00019" summary="Autoload Register">
-      <created>1531833769143</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1531833769143</updated>
-    </task>
     <task id="LOCAL-00020" summary="JS update">
       <created>1531833811376</created>
       <option name="number" value="00020" />
@@ -1061,11 +1053,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531841400950</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Payment Done">
+      <created>1531841776604</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1531841776604</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12588000" />
+    <option name="totallyTimeSpent" value="12618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1753,8 +1752,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="1670" column="0" lean-forward="true" selection-start-line="1670" selection-start-column="0" selection-end-line="1670" selection-end-column="0" />
+        <state relative-caret-position="524">
+          <caret line="1688" column="31" lean-forward="false" selection-start-line="1688" selection-start-column="31" selection-end-line="1688" selection-end-column="31" />
           <folding />
         </state>
       </provider>

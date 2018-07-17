@@ -1685,7 +1685,7 @@ if($trigger !== event.target && !$trigger.has(event.target).length){
                 window.location = 'receipt?id='+d.OrderID;
             }
 
-            if(d.status == 010) {
+            if(d.status == '010') {
                 swal('info',d.msg,'success');
             }
 
