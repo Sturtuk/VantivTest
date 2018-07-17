@@ -1661,7 +1661,12 @@ var $trigger = $(".dropdown");
 if($trigger !== event.target && !$trigger.has(event.target).length){
     $(".takkk").slideUp("fast");
 		$(".ee").removeClass("change");
-} 
+}
+
+
+    $(".place_order").on('click',function(){
+        $("#frm-delivery").submit();
+    })
 
 
 

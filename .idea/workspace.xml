@@ -4,7 +4,7 @@
     <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/store-v3.js" afterPath="$PROJECT_DIR$/assets/js/store-v3.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,21 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="store-v3.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="307" column="4" lean-forward="false" selection-start-line="307" selection-start-column="4" selection-end-line="307" selection-end-column="4" />
+            <state relative-caret-position="438">
+              <caret line="1669" column="0" lean-forward="true" selection-start-line="1669" selection-start-column="0" selection-end-line="1669" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="3657" column="42" lean-forward="false" selection-start-line="3657" selection-start-column="42" selection-end-line="3657" selection-end-column="42" />
+            <state relative-caret-position="102">
+              <caret line="3648" column="28" lean-forward="true" selection-start-line="3648" selection-start-column="28" selection-end-line="3648" selection-end-column="28" />
               <folding>
                 <element signature="e#43#3224#0#PHP" expanded="false" />
                 <element signature="e#3228#9025#0#PHP" expanded="false" />
@@ -442,6 +442,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/VantivPayment.php" />
         <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
+        <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
       </list>
     </option>
   </component>
@@ -516,7 +517,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="admincon&#9;null&#9;null&#10;rz&#9;FILE&#9;file:///Users/sturt/Downloads/Works/VantivTest/protected/views/store/rzr-init.php&#10;asset&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="store&#9;FILE&#9;file:///Users/sturt/Downloads/Works/VantivTest/assets/js/store-v3.js&#10;admincon&#9;null&#9;null&#10;rz&#9;FILE&#9;file:///Users/sturt/Downloads/Works/VantivTest/protected/views/store/rzr-init.php&#10;asset&#9;null&#9;null" />
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
     <UpdatedFiles>
@@ -781,11 +782,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531833550905</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Autoload Register">
+      <created>1531833769143</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1531833769143</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4907000" />
+    <option name="totallyTimeSpent" value="4944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1009,14 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="307" column="4" lean-forward="false" selection-start-line="307" selection-start-column="4" selection-end-line="307" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -1222,8 +1222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="3657" column="42" lean-forward="false" selection-start-line="3657" selection-start-column="42" selection-end-line="3657" selection-end-column="42" />
+        <state relative-caret-position="102">
+          <caret line="3648" column="28" lean-forward="true" selection-start-line="3648" selection-start-column="28" selection-end-line="3648" selection-end-column="28" />
           <folding>
             <element signature="e#43#3224#0#PHP" expanded="false" />
             <element signature="e#3228#9025#0#PHP" expanded="false" />
@@ -1400,6 +1400,14 @@
             <marker date="1531833766555" expanded="true" signature="136726:137076" ph="SELECT SQL_C... " />
             <marker date="1531833766555" expanded="true" signature="139575:139726" ph="SELECT SQL_C... ${$sTable}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/store-v3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="1669" column="0" lean-forward="true" selection-start-line="1669" selection-start-column="0" selection-end-line="1669" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
