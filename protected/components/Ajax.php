@@ -3647,11 +3647,11 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	public function VntProcessPay(){
         global $VApp;
 
-        $Orderdata =Yii::app()->functions->getOrder($_POST['OrderID']);
+        $Orderdata =Yii::app()->functions->getOrder($_POST['order_id']);
         $sale_info = [
 
-            'id'        =>      $_POST['OrderID'],
-            'orderId' => $_POST['OrderID'],
+            'id'        =>      $_POST['order_id'],
+            'orderId' => $_POST['order_id'],
             'amount'  => str_replace(".","",normalPrettyPrice($Orderdata['total_w_tax'])),
             'orderSource' => 'ecommerce',
             'billToAddress' =>
