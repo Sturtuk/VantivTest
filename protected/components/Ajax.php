@@ -1,6 +1,6 @@
 <?php
 
-require_once '../../vendor/autoload.php';
+require_once '/home/access/public_html/c41673.takeoutlist.com/vendor/autoload.php';
 
 class Ajax extends AjaxAdmin 
 {
