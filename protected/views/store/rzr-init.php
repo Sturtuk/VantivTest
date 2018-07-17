@@ -31,19 +31,8 @@ $this->renderPartial('/front/order-progress-bar',array(
 	<div class="row top10">
 	<div class="col-md-12">
 
-	<form action="<?php echo Yii::app()->createUrl('/store/top10',array('xid'=>$data['order_id']))?>" method="POST">
-    <script
-    src="https://checkout.razorpay.com/v1/checkout.js"
-    data-key="<?php echo $credentials['key_id']?>"
-    data-amount="<?php echo $amount;?>"
-    data-buttontext="<?php echo t("Pay Now")?>"
-    data-name="<?php echo clearString($data['merchant_name'])?>"
-    data-description="<?php echo $payment_description?>"
-    data-image="<?php //echo FrontFunctions::getLogoURL();?>"
-    data-prefill.name="<?php echo $_SESSION['kr_client']['first_name']." ".$_SESSION['kr_client']['last_name']?>"
-    data-prefill.email="<?php echo $_SESSION['kr_client']['email_address']?>"
-    data-prefill.contact="<?php echo $_SESSION['kr_client']['contact_phone']?>"
-    data-theme.color="#F37254"></script>
+	<form id="ProcessVntPay" onsubmit="return false;" method="POST">
+
     <input type="hidden" value="<?php echo $data['order_id']?>" name="hidden">
 
 

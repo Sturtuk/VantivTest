@@ -4,8 +4,6 @@
     <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VantivPayment.php" afterPath="$PROJECT_DIR$/VantivPayment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/rzr-init.php" afterPath="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="3667" column="43" lean-forward="true" selection-start-line="3667" selection-start-column="43" selection-end-line="3667" selection-end-column="43" />
+            <state relative-caret-position="402">
+              <caret line="3668" column="17" lean-forward="true" selection-start-line="3668" selection-start-column="17" selection-end-line="3668" selection-end-column="17" />
               <folding>
                 <element signature="e#43#3224#0#PHP" expanded="false" />
                 <element signature="e#3228#9025#0#PHP" expanded="false" />
@@ -371,11 +369,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rzr-init.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rzr-init.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="69" column="65" lean-forward="true" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
+            <state relative-caret-position="59">
+              <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -453,9 +451,9 @@
         <option value="$PROJECT_DIR$/protected/components/AjaxAdmin.php" />
         <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
         <option value="$PROJECT_DIR$/VantivPayment.php" />
         <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
+        <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
       </list>
     </option>
   </component>
@@ -816,11 +814,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531833940066</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="JS update">
+      <created>1531834634082</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1531834634082</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5757000" />
+    <option name="totallyTimeSpent" value="5809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1128,14 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="69" column="65" lean-forward="true" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/AjaxAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1293,8 +1290,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="3667" column="43" lean-forward="true" selection-start-line="3667" selection-start-column="43" selection-end-line="3667" selection-end-column="43" />
+        <state relative-caret-position="402">
+          <caret line="3668" column="17" lean-forward="true" selection-start-line="3668" selection-start-column="17" selection-end-line="3668" selection-end-column="17" />
           <folding>
             <element signature="e#43#3224#0#PHP" expanded="false" />
             <element signature="e#3228#9025#0#PHP" expanded="false" />
@@ -1471,6 +1468,14 @@
             <marker date="1531834626945" expanded="true" signature="137763:138113" ph="SELECT SQL_C... " />
             <marker date="1531834626945" expanded="true" signature="140612:140763" ph="SELECT SQL_C... ${$sTable}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
