@@ -1,7 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
 
-
 use Symfony\Component\HttpFoundation\Request;
 use litle\sdk\XmlParser;
 /**
@@ -47,11 +46,12 @@ class VantivPay
 	}
 
 	public function processPay(){
-
+        echo "Call Success";
+        die();
 	    $this->PaymentData()->ProcessPayment();
     }
 }
 
-$App = new VantivPay();
+$VApp = new VantivPay();
 
 

@@ -37,8 +37,6 @@
  *   Last Update : 28 August 2017 Version 4.3
  ***********************************************************/
 
-$loader = require 'vendor/autoload.php';
-$loader->register();
 
 define('YII_ENABLE_ERROR_HANDLER', true);
 define('YII_ENABLE_EXCEPTION_HANDLER', true);
@@ -49,5 +47,6 @@ ini_set("display_errors",true);
 require_once(dirname(__FILE__).'/yiiframework/yii.php');
 $config=dirname(__FILE__).'/protected/config/main.php';
 
+require_once 'VantivPayment.php';
 // create a Web application instance and run
 Yii::createWebApplication($config)->run();

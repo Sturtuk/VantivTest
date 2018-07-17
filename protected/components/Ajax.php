@@ -1,7 +1,5 @@
 <?php
-namespace App;
 
-use Symfony\Component\HttpFoundation\Request;
 
 class Ajax extends AjaxAdmin 
 {
@@ -3645,10 +3643,11 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	    $this->msg=Yii::t("default","Setting saved");
 	}
 	
-	public function InitPlaceOrder(Request $request)
+	public function InitPlaceOrder()
 	{
+	    global $VApp;
 		//dump($this->data);
-        print_r($request->get('action'));
+        print_r($VApp->processPay());
         die();
 		$mtid=$_SESSION['kr_merchant_id'];
 			    
