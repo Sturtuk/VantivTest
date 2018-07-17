@@ -3645,9 +3645,34 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
 	public function VntProcessPay(){
         global $VApp;
-        print_r($_SESSION);
-        //dump($this->data);
-        print_r($VApp->processPay());
+
+        $Orderdata =Yii::app()->functions->getOrder($_GET['id']);
+        $sale_info = [
+            'orderId' => $_GET['id'],
+            'amount'  => normalPrettyPrice($Orderdata['total_w_tax']),
+            'orderSource' => 'ecommerce',
+            'billToAddress' =>
+                [
+                    'name' 			=>  $_SESSION['kr_client']['first_name'],
+                    'addressLine1' 	=>  $_SESSION['kr_client']['street'],
+                    'city' 			=>  $_SESSION['kr_client']['city'],
+                    'state' 			=>  $_SESSION['kr_client']['state'],
+                    'zip' 				=>  $_SESSION['kr_client']['zipcode'],
+                    'country' 			=> 	$_SESSION['kr_client']['country_code']
+                ],
+            'card' =>
+                [
+                    'number' => $_POST['card-number'],
+                    'expDate' => $_POST['Month'].$_POST['Year'],
+                    'cardValidationNum' => $_POST['card-number'],
+                    'type' => $_POST['ccv']
+                ]
+        ];
+
+
+        print_r($sale_info);
+
+        print_r($VApp->PaymentData($sale_info))->ProcessPayment();
         die();
 
     }
