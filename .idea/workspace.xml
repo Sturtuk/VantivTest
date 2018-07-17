@@ -225,8 +225,8 @@
       <file leaf-file-name="rzr-init.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="705">
+              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -521,13 +521,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00025" summary="Check Payment">
-      <created>1531834903179</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1531834903179</updated>
     </task>
     <task id="LOCAL-00026" summary="Check Payment">
       <created>1531835156623</created>
@@ -865,11 +858,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531849667510</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="CC Validation">
+      <created>1531849800153</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1531849800153</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14333000" />
+    <option name="totallyTimeSpent" value="14451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1560,8 +1560,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/store/rzr-init.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="705">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding />
         </state>
       </provider>

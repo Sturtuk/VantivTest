@@ -11,12 +11,83 @@ $this->renderPartial('/front/order-progress-bar',array(
 //dump($credentials);
 ?>
 <style>
+    /*
+   * === CC VALIDATION BEGIN ===
+   */
+
+    .card-number .icon {
+        position: absolute;
+        right: 17px;
+        top: 50%;
+        color: #1e88e5;
+        font-size: 34px;
+        margin-top: -17px;
+    }
+
+    .card-number-color .icon {
+        color: #1e88e5;
+    }
+
+    .card-number .ccicon_visa,
+    .card-number .ccicon_discover,
+    .card-number .ccicon_mastercard,
+    .card-number .ccicon_amex,
+    .card-number .ccicon_jcb,
+    .card-number .ccicon_unionpay {
+        font-size: 26px;
+        margin-top: -13px;
+    }
+
     .floatinglabel > div.input-validation-error {
         color: #e53935;
     }
-    .input-validation-error {
-        display: none;
+
+    .input-validation-icon {
+        position: absolute;
+        right: 17px;
+        top: 60%;
+        color: #fff;
+        font-size: 20px;
+        margin-top: -15px;
     }
+
+    /* Hide validation error by default. */
+    .input-validation-error {
+        display :none;
+    }
+
+    /* Apply display logic to validation error. */
+    label.validation-error > .input-validation-error {
+        display: block;
+        font-size: 12px;
+        position: absolute;
+        bottom: -25px;
+        left: 2px;
+    }
+
+    label.validation-error > .input-validation-icon {
+        color: red;
+    }
+
+    label.validation-error > .valid_inputCardExpiry,
+    label.validation-error > .valid_cc_cscv,
+    label.validation-error > .valid_cc_number {
+        border-color: red;
+    }
+
+    @media only screen and (min-width : 320px) and (max-width : 700px) {
+        label.card-number,
+        label.expiry-date,
+        label.cvv-number {
+            margin-bottom:24px;
+        }
+    }
+
+
+    /*
+    * === CC VALIDATION END ===
+    */
+
 </style>
 <div class="sections section-grey2 section-orangeform">
   <div class="container">
