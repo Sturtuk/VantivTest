@@ -7,7 +7,7 @@ $sale_info = array(
 
            'id' => '11',
              'orderId' => '1345',
-             'amount'  => '12.00',
+             'amount'  => '1200',
              'orderSource' => 'ecommerce',
              'billToAddress' => [
                              'name' => 'John Smith' ,
@@ -25,6 +25,13 @@ $sale_info = array(
                  ]
             );
 $initialize = new litle\sdk\LitleOnlineRequest();
+$saleResponse =$initialize->saleRequest($_REQUEST);
+#display results
+echo ("Response: " . (litle\sdk\XmlParser::getNode($saleResponse,'response')) . "<br>");
+echo ("Message: " . litle\sdk\XmlParser::getNode($saleResponse,'message') . "<br>");
+echo ("Vantiv eCommerce Transaction ID: " . litle\sdk\XmlParser::getNode($saleResponse,'litleTxnId'));
+
+
 $saleResponse =$initialize->saleRequest($sale_info);
 #display results
 echo ("Response: " . (litle\sdk\XmlParser::getNode($saleResponse,'response')) . "<br>");

@@ -3652,7 +3652,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
             'id'        =>      $_POST['OrderID'],
             'orderId' => $_POST['OrderID'],
-            'amount'  => normalPrettyPrice($Orderdata['total_w_tax']),
+            'amount'  => str_replace(".","",normalPrettyPrice($Orderdata['total_w_tax'])),
             'orderSource' => 'ecommerce',
             'billToAddress' =>
                 [
