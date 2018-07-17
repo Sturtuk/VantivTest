@@ -3646,7 +3646,8 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	public function InitPlaceOrder()
 	{
 	    global $VApp;
-		//dump($this->data);
+	    print_r($_SESSION);
+	    //dump($this->data);
         print_r($VApp->processPay());
         die();
 		$mtid=$_SESSION['kr_merchant_id'];
