@@ -3717,6 +3717,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	    	)) ;
 	    } else $this->details=Yii::app()->createUrl('store/confirmorder') ;		    
 	}
+
 	
 	public function emailLogs()
 	{
