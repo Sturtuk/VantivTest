@@ -1,6 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
-
+ini_set("display_errors","on");
 use Symfony\Component\HttpFoundation\Request;
 use litle\sdk\XmlParser;
 /**
