@@ -3648,6 +3648,13 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
         $Orderdata =Yii::app()->functions->getOrder($_POST['OrderID']);
         $sale_info = [
+            'user' => 'JoesStore',
+            'password' => 'JoeyIsTheBe$t',
+            'currency_merchant_map'    =>    [
+                'DEFAULT'  =>    'USD'
+            ],
+            'proxy'  =>    '',
+            'reportGroup' => 'Default Report Group',
             'id'        =>      $_POST['OrderID'],
             'orderId' => $_POST['OrderID'],
             'amount'  => normalPrettyPrice($Orderdata['total_w_tax']),
