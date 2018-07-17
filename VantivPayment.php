@@ -19,13 +19,13 @@ class VantivPay
         $message = (litle\sdk\XmlParser::getNode($saleResponse,'message'));
         $transid =  (litle\sdk\XmlParser::getNode($saleResponse,'litleTxnId'));
 
-        $data =  [
+        $res_data =  [
             'status'    =>  $response,
             'msg'       =>  $message,
             'transId'   =>  $transid,
         ];
-        print_r($data);
-        echo json_encode($data);
+
+        echo json_encode($res_data);
 
 	}
 
