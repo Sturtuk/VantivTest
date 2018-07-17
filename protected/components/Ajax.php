@@ -3655,7 +3655,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	public function InitPlaceOrder()
 	{
 
-			    
+        $mtid=$_SESSION['kr_merchant_id'];
 	    if ( $this->data['delivery_type']=="delivery"){
 	    	if (FunctionsV3::isSearchByLocation()){	    		
 	    		$params_check=array(
