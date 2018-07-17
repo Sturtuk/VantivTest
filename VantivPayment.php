@@ -11,7 +11,6 @@ class VantivPay
 
 	public function PaymentData(array $data){
 
-	    print_r($data);
 
         $initialize = new litle\sdk\LitleOnlineRequest();
         $saleResponse =   $initialize->authorizationRequest($data);
@@ -25,7 +24,7 @@ class VantivPay
             'status'    =>  $response,
             'msg'       =>  $message,
             'transId'   =>  $transid,
-            'OrderID'   =>  $data['order_id'],
+            'OrderID'   =>  $data['orderId'],
         ];
 
         echo json_encode($res_data);
