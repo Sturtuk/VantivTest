@@ -1,8 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
-ini_set("display_errors","on");
 
-use Symfony\Component\HttpFoundation\Response;
+
 use litle\sdk\XmlParser;
 /**
 * @author Edwin Sturt

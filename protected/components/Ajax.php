@@ -3648,25 +3648,18 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
         $Orderdata =Yii::app()->functions->getOrder($_POST['OrderID']);
         $sale_info = [
-            'user' => 'JoesStore',
-            'password' => 'JoeyIsTheBe$t',
-            'currency_merchant_map'    =>    [
-                'DEFAULT'  =>    'USD'
-            ],
-            'proxy'  =>    '',
-            'reportGroup' => 'Default Report Group',
             'id'        =>      $_POST['OrderID'],
             'orderId' => $_POST['OrderID'],
             'amount'  => normalPrettyPrice($Orderdata['total_w_tax']),
             'orderSource' => 'ecommerce',
             'billToAddress' =>
                 [
-                    'name' 			=>  $_SESSION['kr_client']['first_name'],
-                    'addressLine1' 	=>  $_SESSION['kr_client']['street'],
-                    'city' 			=>  $_SESSION['kr_client']['city'],
-                    'state' 			=>  $_SESSION['kr_client']['state'],
-                    'zip' 				=>  $_SESSION['kr_client']['zipcode'],
-                    'country' 			=> 	$_SESSION['kr_client']['country_code']
+                    'name' => 'John Smith' ,
+                    'addressLine1' => ' 1 Main St.',
+                    'city' => 'Burlington' ,
+                    'state' => 'MA' ,
+                    'zip' => '0183-3747',
+                    'country' => 'US'
                 ],
             'card' =>
                 [
