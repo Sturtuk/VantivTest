@@ -3673,7 +3673,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                     'type' => 'VI'
                 ]
         ];
-
+        print_r($sale_info);
         echo $VApp->PaymentData($sale_info)
                 ->setSMS(false)  //  Make tru send SMS - First you need Configure Twillo Sending Number
                 ->SendSms('+918296585594','Test Message')
