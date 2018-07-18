@@ -532,13 +532,6 @@
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
     </task>
-    <task id="LOCAL-00037" summary="Payment Done">
-      <created>1531837871459</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1531837871459</updated>
-    </task>
     <task id="LOCAL-00038" summary="Payment Done">
       <created>1531838082759</created>
       <option name="number" value="00038" />
@@ -875,11 +868,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531884141448</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="SMS Integration">
+      <created>1531884241179</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1531884241179</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16440000" />
+    <option name="totallyTimeSpent" value="16502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
