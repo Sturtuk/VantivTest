@@ -10,4 +10,5 @@ return array(
     'Twilio\\' => array($vendorDir . '/twilio/sdk/Twilio'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\HttpFoundation\\' => array($vendorDir . '/symfony/http-foundation'),
+    'Devscreencast\\ResponseClass\\' => array($vendorDir . '/devscreencast/json-response/src'),
 );

@@ -1,7 +1,8 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use Symfony\Component\HttpFoundation\Response;
+use Devscreencast\ResponseClass\JsonResponse;
+
 /**
 * @author Edwin Sturt
 */
@@ -58,11 +59,7 @@ class VantivPay
 
     public function getOutput(){
 	    //return $this->output;
-        $response = new Response();
-        $response->setContent(json_encode(array(
-            'data' => 123,
-        )));
-        $response->headers->set('Content-Type', 'application/json');
+        new JsonResponse('ok', '', $this->output);
     }
 
 }

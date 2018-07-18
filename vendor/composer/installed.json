@@ -309,5 +309,50 @@
             "sms",
             "twilio"
         ]
+    },
+    {
+        "name": "devscreencast/json-response",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/terdia/json-response.git",
+            "reference": "614cf504fc71fed4ebef86981d7c9d564c18954c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/terdia/json-response/zipball/614cf504fc71fed4ebef86981d7c9d564c18954c",
+            "reference": "614cf504fc71fed4ebef86981d7c9d564c18954c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2017-04-22T06:40:31+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Devscreencast\\ResponseClass\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "terdia",
+                "email": "support@devscreencast.com",
+                "homepage": "https://devscreencast.com"
+            }
+        ],
+        "description": "A simple class that returns a properly formatted json response with HTTP status",
+        "keywords": [
+            "API Response Class",
+            "json",
+            "php",
+            "response"
+        ]
     }
 ]

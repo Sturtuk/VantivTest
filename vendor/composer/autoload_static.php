@@ -25,6 +25,10 @@ class ComposerStaticInitc7e20a1cb4cf3e6701555cf5e92924cc
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\HttpFoundation\\' => 33,
         ),
+        'D' => 
+        array (
+            'Devscreencast\\ResponseClass\\' => 28,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -43,6 +47,10 @@ class ComposerStaticInitc7e20a1cb4cf3e6701555cf5e92924cc
         'Symfony\\Component\\HttpFoundation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
+        ),
+        'Devscreencast\\ResponseClass\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/devscreencast/json-response/src',
         ),
     );
 
