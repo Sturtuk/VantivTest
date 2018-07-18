@@ -33,8 +33,8 @@ class VantivPay
 	}
 
 	public function SendSms($mobile = '',$msg){
-        $sid = "AC47f21a90f34e179176e30f2e16cf196a"; // Your Account SID from www.twilio.com/console
-        $token = "53790b10d4fd38e0907af88d2ff8a280"; // Your Auth Token from www.twilio.com/console
+        $sid = "AC1c193f28ca84f5765defc58d17452c0e"; // Your Account SID from www.twilio.com/console
+        $token = "b58fe761181e136bf154163957984a69"; // Your Auth Token from www.twilio.com/console
 
         $client = new Twilio\Rest\Client($sid, $token);
         $message = $client->messages->create(

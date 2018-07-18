@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="">
+    <list default="true" id="f710452e-f04c-4bc4-96ed-2f2256e38f35" name="Default" comment="SMS Integration">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VantivPayment.php" afterPath="$PROJECT_DIR$/VantivPayment.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
-              <caret line="3676" column="49" lean-forward="true" selection-start-line="3676" selection-start-column="49" selection-end-line="3676" selection-end-column="49" />
+              <caret line="3676" column="51" lean-forward="false" selection-start-line="3676" selection-start-column="51" selection-end-line="3676" selection-end-column="51" />
               <folding>
                 <element signature="e#44#3225#0#PHP" expanded="false" />
                 <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -232,11 +232,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VantivPayment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            <state relative-caret-position="300">
+              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -282,8 +282,8 @@
         <option value="$PROJECT_DIR$/protected/views/store/payment-option.php" />
         <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
         <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
-        <option value="$PROJECT_DIR$/VantivPayment.php" />
         <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
+        <option value="$PROJECT_DIR$/VantivPayment.php" />
       </list>
     </option>
   </component>
@@ -531,13 +531,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00035" summary="Payment Done">
-      <created>1531837619234</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1531837619234</updated>
     </task>
     <task id="LOCAL-00036" summary="Payment Done">
       <created>1531837806494</created>
@@ -875,11 +868,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531881163655</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="SMS Integration">
+      <created>1531881201342</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1531881201342</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15949000" />
+    <option name="totallyTimeSpent" value="16341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1378,14 +1378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VantivPayment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/ScriptManagerCompress.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -1397,7 +1389,7 @@
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="3676" column="49" lean-forward="true" selection-start-line="3676" selection-start-column="49" selection-end-line="3676" selection-end-column="49" />
+          <caret line="3676" column="51" lean-forward="false" selection-start-line="3676" selection-start-column="51" selection-end-line="3676" selection-end-column="51" />
           <folding>
             <element signature="e#44#3225#0#PHP" expanded="false" />
             <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -1574,6 +1566,14 @@
             <marker date="1531881194815" expanded="true" signature="137870:138220" ph="SELECT SQL_C... " />
             <marker date="1531881194815" expanded="true" signature="140719:140870" ph="SELECT SQL_C... ${$sTable}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VantivPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
