@@ -38,7 +38,7 @@ class VantivPay
 
         $client = new Twilio\Rest\Client($sid, $token);
         $message = $client->messages->create(
-            '+1251-220-5568', // Text this number
+            'ZOLIPE', // Text this number
             array(
                 'from' => $mobile, // From a valid Twilio number
                 'body' => $msg
