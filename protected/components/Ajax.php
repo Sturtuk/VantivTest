@@ -3674,7 +3674,10 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                 ]
         ];
 
-        $VApp->PaymentData($sale_info)->SendSms('+918296585594','Test Message')->getOutput();
+        $VApp->setSMS(false)
+                ->PaymentData($sale_info)
+                ->SendSms('+918296585594','Test Message')
+                ->getOutput();
         die();
     }
 
