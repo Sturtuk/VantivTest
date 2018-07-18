@@ -3667,8 +3667,8 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                 ],
             'card' =>
                 [
-                    'number' => trim($_POST['cc_number']),
-                    'expDate' => str_replace("/","",trim($_POST['cc_expiry'])),
+                    'number' => str_replace(" ","",$_POST['cc_number']),
+                    'expDate' => str_replace("/","",str_replace(" ","",$_POST['cc_expiry'])),
                     'cardValidationNum' => $_POST['cc_cscv'],
                     'type' => 'VI'
                 ]
