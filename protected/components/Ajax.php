@@ -1,6 +1,8 @@
 <?php
 
+ 
 
+ 
 
 class Ajax extends AjaxAdmin 
 {
@@ -3673,15 +3675,18 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                     'type' => 'VI'
                 ]
         ];
+ 			//$tonum = $_SESSION['contact_phone'];
+
+
 
         echo $VApp->PaymentData($sale_info)
-                ->setSMS(false)  //  Make tru send SMS - First you need Configure Twillo Sending Number
-                ->SendSms('+918296585594','Test Message')
+                ->setSMS(false) //  Make tru send SMS - First you need Configure Twillo Sending Number
+                ->SendSms('+1','Test Message hello demo')
                 ->getOutput();
         die();
     }
 
-
+ 
 
 	public function InitPlaceOrder()
 	{
