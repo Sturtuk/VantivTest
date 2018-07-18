@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/cart.PNG" afterPath="$PROJECT_DIR$/assets/images/cart.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VantivPayment.php" afterPath="$PROJECT_DIR$/VantivPayment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Ajax.php" afterPath="$PROJECT_DIR$/protected/components/Ajax.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="3677" column="14" lean-forward="true" selection-start-line="3677" selection-start-column="14" selection-end-line="3677" selection-end-column="14" />
+            <state relative-caret-position="363">
+              <caret line="3674" column="10" lean-forward="true" selection-start-line="3674" selection-start-column="10" selection-end-line="3674" selection-end-column="10" />
               <folding>
                 <element signature="e#44#3225#0#PHP" expanded="false" />
                 <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -233,11 +232,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VantivPayment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="496">
+              <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -283,8 +282,8 @@
         <option value="$PROJECT_DIR$/protected/views/store/payment-option.php" />
         <option value="$PROJECT_DIR$/assets/js/store-v3.js" />
         <option value="$PROJECT_DIR$/protected/views/store/rzr-init.php" />
-        <option value="$PROJECT_DIR$/VantivPayment.php" />
         <option value="$PROJECT_DIR$/protected/components/Ajax.php" />
+        <option value="$PROJECT_DIR$/VantivPayment.php" />
       </list>
     </option>
   </component>
@@ -532,13 +531,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00031" summary="Payment Done">
-      <created>1531836837941</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1531836837941</updated>
     </task>
     <task id="LOCAL-00032" summary="Payment Done">
       <created>1531837271639</created>
@@ -876,11 +868,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531880576960</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="SMS Integration">
+      <created>1531880668656</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1531880668656</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15448000" />
+    <option name="totallyTimeSpent" value="15535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1387,18 +1386,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VantivPayment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="3677" column="14" lean-forward="true" selection-start-line="3677" selection-start-column="14" selection-end-line="3677" selection-end-column="14" />
+        <state relative-caret-position="363">
+          <caret line="3674" column="10" lean-forward="true" selection-start-line="3674" selection-start-column="10" selection-end-line="3674" selection-end-column="10" />
           <folding>
             <element signature="e#44#3225#0#PHP" expanded="false" />
             <element signature="e#3229#9026#0#PHP" expanded="false" />
@@ -1575,6 +1566,14 @@
             <marker date="1531880664743" expanded="true" signature="137871:138221" ph="SELECT SQL_C... " />
             <marker date="1531880664743" expanded="true" signature="140720:140871" ph="SELECT SQL_C... ${$sTable}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VantivPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
