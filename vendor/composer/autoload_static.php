@@ -16,6 +16,10 @@ class ComposerStaticInitc7e20a1cb4cf3e6701555cf5e92924cc
         array (
             'phpseclib\\' => 10,
         ),
+        'T' => 
+        array (
+            'Twilio\\' => 7,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -27,6 +31,10 @@ class ComposerStaticInitc7e20a1cb4cf3e6701555cf5e92924cc
         'phpseclib\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
+        'Twilio\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twilio/sdk/Twilio',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (

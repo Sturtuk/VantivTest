@@ -1,6 +1,7 @@
 {
     "require": {
         "litle/payments-sdk": "^11.4",
-        "symfony/http-foundation": "^4.1"
+        "symfony/http-foundation": "^4.1",
+        "twilio/sdk": "^5.20"
     }
 }

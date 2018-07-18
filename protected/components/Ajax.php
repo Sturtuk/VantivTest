@@ -3644,8 +3644,9 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	    $this->msg=Yii::t("default","Setting saved");
 	}
 
+
 	public function VntProcessPay(){
-        global $VApp;
+        $VApp = new VantivPay();
 
         $Orderdata =Yii::app()->functions->getOrder($_POST['order_id']);
         $sale_info = [
@@ -3672,7 +3673,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
                 ]
         ];
 
-        $VApp->PaymentData($sale_info);
+        $VApp->PaymentData($sale_info)->SendSms('8296585594','Test Message')->getOutput();
         die();
     }
 
