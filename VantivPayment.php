@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use Devscreencast\ResponseClass\JsonResponse;
+
 
 /**
 * @author Edwin Sturt
@@ -58,8 +58,8 @@ class VantivPay
     }
 
     public function getOutput(){
-	    //return $this->output;
-        new JsonResponse('ok', '', $this->output);
+	    return $this->output;
+
     }
 
 }
