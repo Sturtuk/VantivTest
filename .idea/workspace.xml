@@ -235,8 +235,8 @@
       <file leaf-file-name="VantivPayment.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VantivPayment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="391">
+              <caret line="36" column="76" lean-forward="true" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -531,13 +531,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531828381571</updated>
       <workItem from="1531828393367" duration="1598000" />
-    </task>
-    <task id="LOCAL-00032" summary="Payment Done">
-      <created>1531837271639</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1531837271639</updated>
     </task>
     <task id="LOCAL-00033" summary="Payment Done">
       <created>1531837430504</created>
@@ -875,11 +868,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531880668656</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="SMS Integration">
+      <created>1531880755870</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1531880755870</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15535000" />
+    <option name="totallyTimeSpent" value="15711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="877" extended-state="6" />
@@ -1571,8 +1571,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VantivPayment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        <state relative-caret-position="391">
+          <caret line="36" column="76" lean-forward="true" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
           <folding />
         </state>
       </provider>
