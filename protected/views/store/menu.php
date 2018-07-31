@@ -704,3 +704,104 @@ if ($food_viewing_private==2){
 
 
 
+<script>
+
+
+
+
+$('.dto').timepicker({
+	timeFormat: 'h:mm p',
+    interval: 15,
+    minTime: '08',
+    maxTime: '11:00pm',
+   
+    startTime: '08:00', 
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
+
+
+
+//$('#delivery_time').timepicker({ 'scrollDefault': 'now', 'minuteStep' : 15 });
+</script>
+
+<!-- <script>
+$("div").addClass( "active-order yourClass" );
+</script> -->
+<script type="text/javascript">
+		$(document).ready(function(){
+
+	    $(".exp:nth-child(1)").click(function() {
+		$('html,body').animate({
+		scrollTop: $(".menu-1:nth-child(2) ").offset().top},
+		1500);
+		});	
+
+		$(".exp:nth-child(2)").click(function() {
+		
+		$('html,body').animate({
+		scrollTop: $(".menu-1:nth-child(3) ").offset().top},
+		1500);
+		});
+
+		$(".exp:nth-child(3)").click(function() {
+		
+		$('html,body').animate({
+		scrollTop: $(".menu-1:nth-child(4) ").offset().top},
+		1500);
+		});
+
+		$(".exp:nth-child(4)").click(function() {
+		
+		$('html,body').animate({
+		scrollTop: $(".menu-1:nth-child(5) ").offset().top},
+		1500);
+		});
+
+		$(".exp:nth-child(5)").click(function() {
+		
+		$('html,body').animate({
+		scrollTop: $(".menu-1:nth-child(6) ").offset().top},
+		1500);
+		});
+
+		$(".exp:nth-child(6)").click(function() {
+		
+		$('html,body').animate({
+		scrollTop: $(".menu-1:nth-child(7) ").offset().top},
+		500);
+		});
+
+		$(".exp:nth-child(7)").click(function() {
+		
+		$('html,body').animate({
+		scrollTop: $(".menu-1:nth-child(8) ").offset().top},
+		1500);
+		});
+
+		$(".exp:last").click(function() {
+		
+		$('html,body').animate({
+		scrollTop: $(".menu-1:last ").offset().top},
+		1500);
+		});
+
+
+		$(window).scroll(function(e){ 
+			  var $el = $('.food_fix'); 
+			  var isPositionFixed = ($el.css('position') == 'fixed');
+			  if ($(this).scrollTop() > 550 && !isPositionFixed){ 
+			    $('.food_fix').css({'position': 'fixed', 'top': '0px', 'width': '100%'}); 
+			  }
+			  if ($(this).scrollTop() < 100 && isPositionFixed)
+			  {
+			    $('.food_fix').css({'position': 'static', 'top': '0px'}); 
+			  } 
+			});
+
+		
+		
+});
+
+</script>

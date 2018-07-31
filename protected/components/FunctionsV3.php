@@ -1321,6 +1321,9 @@ class FunctionsV3
 			if ( getOption($merchant_id,'enabled_paypal')=="yes"){
 				$payment_available[]='pyp';
 			}
+			if ( getOption($merchant_id,'enabled_paypal')=="yes"){
+				$payment_available[]='vnt';
+			}
 			if ( getOption($merchant_id,'stripe_enabled')=="yes"){
 				$payment_available[]='stp';
 			}

@@ -165,7 +165,7 @@ echo CHtml::hiddenField('mobile_country_code',Yii::app()->functions->getAdminCou
 	    }
 		?>
         
-	    <?php if ( $disabled_guest_checkout!="yes"):?>
+	   <!--  <?php if ( $disabled_guest_checkout!="yes"):?>
 		  <div class="section-label bottom20">
 		    <a class="section-label-a">
 		       <i class="ion-android-contact i-big green-color"></i>
@@ -173,14 +173,14 @@ echo CHtml::hiddenField('mobile_country_code',Yii::app()->functions->getAdminCou
 		      <?php echo t("Guest Checkout")?></span>
 		      <b></b>
 		    </a>     
-		  </div>    
+		  </div>     -->
 		  
-		  <p style="margin-bottom:0;">
+		  <!-- <p style="margin-bottom:0;">
 		  <?php echo t("Proceed to checkout, and you will have an option to create an account at the end.")?>
 		  </p>
 		  <a href="<?php echo $this->createUrl('/store/guestcheckout');?>" 
 	               class="text-center block orange-text bottom20"><?php echo t("Continue as guest")?></a>
-		  <?php endif;?>
+		  <?php endif;?> -->
 		  
 		  <div class="section-label bottom20">
 		    <a class="section-label-a">

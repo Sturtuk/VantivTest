@@ -125,6 +125,153 @@ Yii::app()->functions->getOptionAdmin("admin_currency_position"));
               ))?>
              </div>             
             </div>  
+
+            <?php FunctionsV3::sectionHeader('Billing Address')?> 
+
+			<div class="bill-address-block"> <!--bill-address-block-start--> 
+              <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('billfirst_name', isset($client_info['billfirst_name'])?$client_info['billfirst_name']:'' ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","First Name"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+
+              <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('billlast_name', isset($client_info['billlast_name'])?$client_info['billlast_name']:'' ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Last Name"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+
+              <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('bill_address1', isset($client_info['bill_address1'])?$client_info['bill_address1']:'' ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Address 1"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+
+              <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('bill_address2', isset($client_info['bill_address2'])?$client_info['bill_address2']:'' ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Address 2"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+              
+           <?php if (!$search_by_location):?>    
+              <div class="row top10">
+                <div class="col-md-10">
+               <?php echo CHtml::textField('bill_city',
+               isset($client_info['bill_city'])?$client_info['bill_city']:''
+               ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","City"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+                         
+            <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('bill_state',
+                 isset($client_info['bill_state'])?$client_info['bill_state']:''
+                 ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","State"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>  
+              
+             <div class="row top10">
+                <div class="col-md-10">
+                  <?php echo CHtml::textField('bill_zipcode',
+                  isset($client_info['bill_zipcode'])?$client_info['bill_zipcode']:''
+                  ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Zip code")
+                ))?>
+               </div> 
+              </div> 
+           
+           <?php else :?>      
+            <!--ADDRESS BY Billing LOCATION -->
+            <?php
+             echo CHtml::hiddenField('city');
+             echo CHtml::hiddenField('state');             
+             echo CHtml::hiddenField('area_name');             
+             $country_id=getOptionA('location_default_country'); $state_ids='';
+             $location_search_data=FunctionsV3::getSearchByLocationData();
+             //dump($location_search_data);
+             ?>
+             <div class="row top10">
+                <div class="col-md-10">
+                 <?php
+                 echo CHtml::dropDownList('state_id','',
+                 (array)FunctionsV3::ListLocationState($country_id)
+                 ,array(
+                   'class'=>'grey-fields full-width',
+                   'data-validation'=>"required"
+                 ));
+                 ?>
+               </div> 
+              </div>  
+              
+             <div class="row top10">
+                <div class="col-md-10">
+                 <?php
+                 echo CHtml::dropDownList('city_id','',
+                 array(
+                  ''=>t("Select City")
+                 )
+                 ,array(
+                   'class'=>'grey-fields full-width',
+                   'data-validation'=>"required"
+                 ));
+                 ?>
+               </div> 
+              </div>   
+              
+             <div class="row top10">
+                <div class="col-md-10">
+                 <?php
+                 echo CHtml::dropDownList('area_id','',
+                 array(
+                  ''=>t("Select Distric/Area/neighborhood")
+                 )
+                 ,array(
+                   'class'=>'grey-fields full-width',
+                   'data-validation'=>"required"
+                 ));
+                 ?>
+               </div> 
+              </div>    
+              
+             <div class="row top10">
+                <div class="col-md-10">
+                  <?php echo CHtml::textField('zipcode',
+                  isset($client_info['zipcode'])?$client_info['zipcode']:''
+                  ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Zip code")
+                ))?>
+               </div> 
+              </div>  
+              
+           <?php endif;?>
+              
+            </div> <!--bill-address-block-end-->
           
 		  <?php //endif;?>
           <?php //endif;?>
@@ -156,7 +303,7 @@ Yii::app()->functions->getOptionAdmin("admin_currency_position"));
 	        }
 	        ?>
 	       </p>	       
-	       	      	     
+	       	      	
 	       <div class="top10">
 	       
 	        <?php FunctionsV3::sectionHeader('Address')?> 
@@ -350,6 +497,8 @@ Yii::app()->functions->getOptionAdmin("admin_currency_position"));
 	              ))?>
 	             </div> 
               </div>  
+<?php echo $client_info['email_address']; ?>
+             
               
              <div class="row top10">
                 <div class="col-md-10">
@@ -367,7 +516,154 @@ Yii::app()->functions->getOptionAdmin("admin_currency_position"));
 	              echo " ".t("Save to my address book");
 	              ?>
 	             </div> 
+              </div>
+			  
+			  <?php FunctionsV3::sectionHeader('Billing Address')?> 
+
+			<div class="bill-address-block"> <!--bill-address-block-start--> 
+              <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('billfirst_name', isset($client_info['billfirst_name'])?$client_info['billfirst_name']:'' ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","First Name"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+
+              <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('billlast_name', isset($client_info['billlast_name'])?$client_info['billlast_name']:'' ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Last Name"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+
+              <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('bill_address1', isset($client_info['bill_address1'])?$client_info['bill_address1']:'' ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Address 1"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+
+              <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('bill_address2', isset($client_info['bill_address2'])?$client_info['bill_address2']:'' ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Address 2"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+              
+           <?php if (!$search_by_location):?>    
+              <div class="row top10">
+                <div class="col-md-10">
+               <?php echo CHtml::textField('bill_city',
+               isset($client_info['bill_city'])?$client_info['bill_city']:''
+               ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","City"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>
+                         
+            <div class="row top10">
+                <div class="col-md-10">
+                 <?php echo CHtml::textField('bill_state',
+                 isset($client_info['bill_state'])?$client_info['bill_state']:''
+                 ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","State"),
+                 'data-validation'=>"required"
+                ))?>
+               </div> 
+              </div>  
+              
+             <div class="row top10">
+                <div class="col-md-10">
+                  <?php echo CHtml::textField('bill_zipcode',
+                  isset($client_info['bill_zipcode'])?$client_info['bill_zipcode']:''
+                  ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Zip code")
+                ))?>
+               </div> 
               </div> 
+           
+           <?php else :?>      
+            <!--ADDRESS BY Billing LOCATION -->
+            <?php
+             echo CHtml::hiddenField('city');
+             echo CHtml::hiddenField('state');             
+             echo CHtml::hiddenField('area_name');             
+             $country_id=getOptionA('location_default_country'); $state_ids='';
+             $location_search_data=FunctionsV3::getSearchByLocationData();
+             //dump($location_search_data);
+             ?>
+             <div class="row top10">
+                <div class="col-md-10">
+                 <?php
+                 echo CHtml::dropDownList('state_id','',
+                 (array)FunctionsV3::ListLocationState($country_id)
+                 ,array(
+                   'class'=>'grey-fields full-width',
+                   'data-validation'=>"required"
+                 ));
+                 ?>
+               </div> 
+              </div>  
+              
+             <div class="row top10">
+                <div class="col-md-10">
+                 <?php
+                 echo CHtml::dropDownList('city_id','',
+                 array(
+                  ''=>t("Select City")
+                 )
+                 ,array(
+                   'class'=>'grey-fields full-width',
+                   'data-validation'=>"required"
+                 ));
+                 ?>
+               </div> 
+              </div>   
+              
+             <div class="row top10">
+                <div class="col-md-10">
+                 <?php
+                 echo CHtml::dropDownList('area_id','',
+                 array(
+                  ''=>t("Select Distric/Area/neighborhood")
+                 )
+                 ,array(
+                   'class'=>'grey-fields full-width',
+                   'data-validation'=>"required"
+                 ));
+                 ?>
+               </div> 
+              </div>    
+              
+             <div class="row top10">
+                <div class="col-md-10">
+                  <?php echo CHtml::textField('zipcode',
+                  isset($client_info['zipcode'])?$client_info['zipcode']:''
+                  ,array(
+                 'class'=>'grey-fields full-width',
+                 'placeholder'=>Yii::t("default","Zip code")
+                ))?>
+               </div> 
+              </div>  
+              
+           <?php endif;?>
+              
+            </div> <!--bill-address-block-end-->
               
              <?php if (isset($is_guest_checkout)):?>
              <div class="row top10">

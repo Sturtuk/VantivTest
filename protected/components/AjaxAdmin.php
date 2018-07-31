@@ -9716,6 +9716,7 @@ $last_login=$val['last_login']=="0000-00-00 00:00:00"?"":date('M d,Y G:i:s',strt
 	    			  $action
 	    		    );
 	    		}
+				//print_r('testing'); exit();
 	    		$this->otableOutput($feed_data);
 	    	}	   
 	    	$this->otableNodata();

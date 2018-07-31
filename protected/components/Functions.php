@@ -933,8 +933,7 @@ class Functions extends CApplicationComponent
                    array('visible'=>$this->hasMerchantAccess("vog"),'tag'=>'vog', 'label'=>'<i class="fa fa-paypal"></i>'.Yii::t("default","voguepay"), 
                    'url'=>array('merchant/voguepay')), 
 
-                    array('visible'=>$this->hasMerchantAccess("vog"),'tag'=>'vog', 'label'=>'<i class="fa fa-paypal"></i>'.Yii::t("default","ddddd"), 
-                   'url'=>array('merchant/voguepay')),                                                            
+                                                                              
                    
                    array('visible'=>$this->hasMerchantAccess("mol"),'tag'=>'mol', 'label'=>'<i class="fa fa-paypal"></i>'.Yii::t("default","Mollie"), 
                    'url'=>array('merchant/mollie')), 
@@ -3156,6 +3155,7 @@ class Functions extends CApplicationComponent
     	if (isset($cart_item)){
     		if (is_array($cart_item) && count($cart_item)>=1){
 				Yii::app()->session['var'] = $cart_item[0]['merchant_id'];
+				//unset($session['var']);
     			$x=0;
     			foreach ($cart_item as $key=>$val) {	    				
     				
@@ -3219,7 +3219,7 @@ class Functions extends CApplicationComponent
     				}
     				
     				/*dump($food_item);
-    				dump($val['item_id']);*/    				
+    				dump($val['item_id']);*/     				
     				
     				$htm.='<div class="item-order-list item-row">';
     				    				  
@@ -4175,7 +4175,7 @@ $htm.='<div class="b uk-text-muted">'."$addon_raw_price ".qTranslate($val_subs[2
 		) as abn,
 				
 		(
-		select concat(street,' ',area_name,' ',city,' ',state,' ',zipcode )
+		select concat(street,' ',area_name,' ',city,' ',state,' ',zipcode,' ',billfirst_name,' ',billlast_name,' ',bill_address1,' ',bill_address2,' ',bill_city,' ',bill_state,' ',bill_zipcode,' ',billcontact_phone )
 		from
 		{{order_delivery_address}}
 		where
@@ -4264,6 +4264,27 @@ $htm.='<div class="b uk-text-muted">'."$addon_raw_price ".qTranslate($val_subs[2
 		return false;
 	}
 	
+	/*public function updateBillClient($data='')
+	{
+		if ( $this->isClientLogin() ){		    		   
+		    $params=array(
+		      'billfirst_name'=>isset($data['billfirst_name'])?$data['billfirst_name']:'',
+		      'billlast_name'=>isset($data['billlast_name'])?$data['billlast_name']:'',
+		      'bill_address1'=>isset($data['bill_address1'])?$data['bill_address1']:'',
+			  'bill_address2'=>isset($data['bill_address2'])?$data['bill_address2']:'',
+		      'bill_city'=>isset($data['bill_city'])?$data['bill_city']:'',
+		      'bill_state'=>isset($data['bill_state'])?$data['bill_state']:'',
+		      'bill_zipcode'=>isset($data['bill_zipcode'])?$data['bill_zipcode']:'',
+		      'billcontact_phone'=>isset($data['billcontact_phone'])?$data['billcontact_phone']:''		      
+		    );		    
+		    $DbExt=new DbExt;
+		    if ( $DbExt->updateData("{{client}}",$params,'client_id',$this->getClientId()) ){
+		    	return true;
+		    }
+		}
+		return false;
+	}*/
+	
 	public function getClientInfo($client_id='')
 	{
 		$DbExt=new DbExt;
@@ -4278,7 +4299,7 @@ $htm.='<div class="b uk-text-muted">'."$addon_raw_price ".qTranslate($val_subs[2
 		}
 		return false;
 	}
-	
+		
 	public function formatOrderNumber($order_id='')
 	{
 		//return str_pad($order_id,10,"0");
@@ -5101,6 +5122,37 @@ $htm.='<div class="b uk-text-muted">'."$addon_raw_price ".qTranslate($val_subs[2
 			        $send_msg="sent";
 			    }    		    		
     			break;
+
+    			case "paymentsmtp":
+    			$paymentsmtp_host=Yii::app()->functions->getOptionAdmin('paymentsmtp_host');
+	    		$paymentsmtp_port=Yii::app()->functions->getOptionAdmin('paymentsmtp_port');
+	    		$paymentsmtp_username=Yii::app()->functions->getOptionAdmin('paymentsmtp_username');
+	    		$paymentsmtp_password=Yii::app()->functions->getOptionAdmin('paymentsmtp_password');
+	    		$paymentsmtp_secure=Yii::app()->functions->getOptionAdmin('paymentsmtp_secure');	   
+	    			    		    		    	
+	    		$mail=Yii::app()->Smtpmail;
+	    		
+	    		Yii::app()->Smtpmail->Host=$paymentsmtp_host;
+	    		Yii::app()->Smtpmail->Username=$paymentsmtp_username;
+	    		Yii::app()->Smtpmail->Password=$paymentsmtp_password;
+	    		Yii::app()->Smtpmail->Port=$paymentsmtp_port;
+	    		Yii::app()->Smtpmail->SMTPSecure=$paymentsmtp_secure;
+	    		//Yii::app()->Smtpmail->CharSet="utf-8";
+	    		
+			    $mail->SetFrom($from, '');
+			    $mail->Subject = $subject;
+			    $mail->MsgHTML($body);
+			    $mail->AddAddress($to, "");
+			    if(!$mail->Send()) {			        
+			        $mail->ClearAddresses();	
+			        $send_msg=t("error occurred")." ".$mail->ErrorInfo;
+			    } else {			        
+			        $mail->ClearAddresses();
+			        $send_status=true;
+			        $send_msg="sent";
+			    }    		    		
+    			break;
+    	
     	
     		case "mandrill":
     			
@@ -7319,8 +7371,7 @@ $menu_html.="</li>";
     	  'We'=>Yii::t("default","We"),
     	  'Th'=>Yii::t("default","Th"),
     	  'Fr'=>Yii::t("default","Fr"),
-    	  'Sa'=>Yii::t("default","Sa"),
-    	  
+    	  'Sa'=>Yii::t("default","Sa"),    	  
     	  'day'=>Yii::t("default","day"),
     	  'days'=>Yii::t("default","days"),
     	  'week'=>Yii::t("default","week"),

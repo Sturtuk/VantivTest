@@ -123,5 +123,28 @@ data-image-src="<?php echo empty($background)?assetsURL()."/images/b-2.jpg":uplo
 
 
 
+<script type="text/javascript">
+
+$(document).ready(function(){
+$('#btnClick').on('click',function(){
+	$("#merchant-map").removeAttr("style");
+	$('twoo').attr('src', '/assets/images/map.png'); 
+    if($('#bag').css('display')!='none')
+    {
+    	$('#twoo').show().siblings('div').hide();
+		 
+    }
+    else if($('#twoo').css('display')!='none')
+    {
+        $('#bag').show().siblings('div').hide(); 
+    }
+});
+
+});
+$("#btnClick").click(function() { $("#btnClick").toggleClass("important");
+$(this).text($(this).text() == 'Details' ? 'Zones' : 'Details');
+ });
+</script>
+
 
 

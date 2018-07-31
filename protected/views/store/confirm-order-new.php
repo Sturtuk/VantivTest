@@ -15,121 +15,192 @@ $this->renderPartial('/front/order-progress-bar',array(
 <?php 
 $mtid=isset($data['merchant_id'])?$data['merchant_id']:'';
 echo CHtml::hiddenField('action','placeOrder');
-foreach ($data as $key=>$val) {	
-	switch ($key) {
-		case "payment_opt":
-			echo CHtml::radioButton($key,true,array(
-			  'value'=>$val,
-			  'class'=>"payment_option hide_inputs"
-			));
-			break;
+foreach ($data as $key=>$val) { 
+  switch ($key) {
+    case "payment_opt":
+      echo CHtml::radioButton($key,true,array(
+        'value'=>$val,
+        'class'=>"payment_option hide_inputs"
+      ));
+      break;
 
-		case "payment_provider_name":	
-		   echo CHtml::radioButton($key,true,array(
-			  'value'=>$val,
-			  'class'=>"hide_inputs"
-			));
-			break;
-		   break;
-		   
-		case "cc_id":	
-		    echo CHtml::radioButton($key,true,array(
-			  'value'=>$val,
-			  'class'=>"cc_id hide_inputs"
-			));
-		    break; 
-		    
-		case "card_fee":    
-		   $cs = Yii::app()->getClientScript();			
-		   $cs->registerScript(
-			  'card_fee',
-			 "var card_fee='$val';",
-			  CClientScript::POS_HEAD
-		   );
-		   break; 
-		   
-		default:
-			echo CHtml::hiddenField($key,$val);	
-			break;
-	}
+    case "payment_provider_name": 
+       echo CHtml::radioButton($key,true,array(
+        'value'=>$val,
+        'class'=>"hide_inputs"
+      ));
+      break;
+       break;
+       
+    case "cc_id": 
+        echo CHtml::radioButton($key,true,array(
+        'value'=>$val,
+        'class'=>"cc_id hide_inputs"
+      ));
+        break; 
+        
+    case "card_fee":    
+       $cs = Yii::app()->getClientScript();     
+       $cs->registerScript(
+        'card_fee',
+       "var card_fee='$val';",
+        CClientScript::POS_HEAD
+       );
+       break; 
+       
+    default:
+      echo CHtml::hiddenField($key,$val); 
+      break;
+  }
 }
 
 $transaction_type=isset($data['delivery_type'])?$data['delivery_type']:'';
 
 switch ($transaction_type) {
-	case "delivery":
-		$header_1='Delivery information';
-		$header_2='Delivery Address';
-		$label_1='Delivery Date';
-		$label_2='Delivery Time';
-		
-		$address=$data['street']." ";
-		if (isset($data['area_name'])){
-			$address.=$data['area_name']." ";
-		}
-		if (isset($data['city'])){
-		    $address.=$data['city']." ";
-		}		
-		if (isset($data['state'])){
-		   $address.=$data['state']." ";
-		}
-		if (isset($data['zipcode'])){
-		   $address.=$data['zipcode']." ";
-		}
-		
-		if (isset($data['address_book_id'])){
-			if ( $address_book = Yii::app()->functions->getAddressBookByID($data['address_book_id'])){
-				$address=$address_book['street'];
-				$address.=" ".$address_book['city'];
-				$address.=" ".$address_book['state'];
-				$address.=" ".$address_book['zipcode'];
-				$address.=" ".$address_book['country_code'];
-			}
-		}
-				
-		if (isset($data['map_address_lat'])){
-			if(!empty($data['map_address_lat'])){
-				$lat_res=FunctionsV3::latToAdress($data['map_address_lat'],$data['map_address_lng']);
-				if($lat_res){					
-					$address=$lat_res['formatted_address'];
-				}
-			}
-		}
-		
-		break;
-		
-	case "pickup":	
-	    $header_1='Pickup information';
-	    $header_2='Pickup Address';
-	    $label_1='Pickup Date';
-		$label_2='Pickup Time';
-						
-	    $address='';
-	    if ( $merchant_info=FunctionsV3::getMerchantInfo($mtid)){
-	    	$address=$merchant_info['complete_address'];
-	    }
-	    break;
-	    
-	case "dinein":    
-	    $header_1='Dine in information';
-	    $header_2='Dine in Address';
-	    $label_1='Dine in Date';
-		$label_2='Dine in Time';
-		$address='';
-	    if ( $merchant_info=FunctionsV3::getMerchantInfo($mtid)){
-	    	$address=$merchant_info['complete_address'];
-	    }
-	   break;
+  case "delivery":
+    $header_1='Delivery information';
+    $header_2='Delivery Address';
+	$header_3='Billing Address';
+    $label_1='Delivery Date';
+    $label_2='Delivery Time';
+    
+    $address=$data['street']." ";
+    if (isset($data['area_name'])){
+      $address.=$data['area_name']." ";
+    }
+    if (isset($data['city'])){
+        $address.=$data['city']." ";
+    }   
+    if (isset($data['state'])){
+       $address.=$data['state']." ";
+    }
+    if (isset($data['zipcode'])){
+       $address.=$data['zipcode']." ";
+    }
+	
+	$address1=$data['billfirst_name']." ";
+    if (isset($data['billlast_name'])){
+      $address1.=$data['billlast_name']." ";
+    }
+    if (isset($data['bill_address1'])){
+        $address1.=$data['bill_address1']." ";
+    }   
+    if (isset($data['bill_address2'])){
+       $address1.=$data['bill_address2']." ";
+    }
+    if (isset($data['bill_city'])){
+       $address1.=$data['bill_city']." ";
+    }
+	if (isset($data['bill_state'])){
+       $address1.=$data['bill_state']." ";
+    }
+	if (isset($data['bill_zipcode'])){
+       $address1.=$data['bill_zipcode']." ";
+    }
+	if (isset($data['billcontact_phone'])){
+       $address1.=$data['billcontact_phone']." ";
+    }
+    
+    if (isset($data['address_book_id'])){
+      if ( $address_book = Yii::app()->functions->getAddressBookByID($data['address_book_id'])){
+        $address=$address_book['street'];
+        $address.=" ".$address_book['city'];
+        $address.=" ".$address_book['state'];
+        $address.=" ".$address_book['zipcode'];
+        $address.=" ".$address_book['country_code'];
+      }
+    }
+        
+    if (isset($data['map_address_lat'])){
+      if(!empty($data['map_address_lat'])){
+        $lat_res=FunctionsV3::latToAdress($data['map_address_lat'],$data['map_address_lng']);
+        if($lat_res){         
+          $address=$lat_res['formatted_address'];
+        }
+      }
+    }
+    
+    break;
+    
+  case "pickup":  
+      $header_1='Pickup information';
+      $header_2='Pickup Address';
+      $header_3='Billing Address';
+      $label_1='Pickup Date';
+    $label_2='Pickup Time';
+            
+      $address='';
+      if ( $merchant_info=FunctionsV3::getMerchantInfo($mtid)){
+        $address=$merchant_info['complete_address'];
+      }
 
-	default:
-		break;
+      $address1=$data['billfirst_name']." ";
+    if (isset($data['billlast_name'])){
+      $address1.=$data['billlast_name']." ";
+    }
+    if (isset($data['bill_address1'])){
+        $address1.=$data['bill_address1']." ";
+    }   
+    if (isset($data['bill_address2'])){
+       $address1.=$data['bill_address2']." ";
+    }
+    if (isset($data['bill_city'])){
+       $address1.=$data['bill_city']." ";
+    }
+  if (isset($data['bill_state'])){
+       $address1.=$data['bill_state']." ";
+    }
+  if (isset($data['bill_zipcode'])){
+       $address1.=$data['bill_zipcode']." ";
+    }
+  if (isset($data['billcontact_phone'])){
+       $address1.=$data['billcontact_phone']." ";
+    }
+      break;
+      
+  case "dinein":    
+      $header_1='Dine in information';
+      $header_2='Dine in Address';
+      $header_3='Billing Address';
+      $label_1='Dine in Date';
+    $label_2='Dine in Time';
+    $address='';
+      if ( $merchant_info=FunctionsV3::getMerchantInfo($mtid)){
+        $address=$merchant_info['complete_address'];
+      }
+      $address1=$data['billfirst_name']." ";
+    if (isset($data['billlast_name'])){
+      $address1.=$data['billlast_name']." ";
+    }
+    if (isset($data['bill_address1'])){
+        $address1.=$data['bill_address1']." ";
+    }   
+    if (isset($data['bill_address2'])){
+       $address1.=$data['bill_address2']." ";
+    }
+    if (isset($data['bill_city'])){
+       $address1.=$data['bill_city']." ";
+    }
+  if (isset($data['bill_state'])){
+       $address1.=$data['bill_state']." ";
+    }
+  if (isset($data['bill_zipcode'])){
+       $address1.=$data['bill_zipcode']." ";
+    }
+  if (isset($data['billcontact_phone'])){
+       $address1.=$data['billcontact_phone']." ";
+    }
+     break;
+
+  default:
+    break;
 }
 if (!isset($s['kr_delivery_options'])){
    $s['kr_delivery_options']='';
 }
 
 if (!isset($data['is_guest_checkout'])){
-	$data['is_guest_checkout']='';
+  $data['is_guest_checkout']='';
 }
 
 //dump($data);
@@ -212,53 +283,58 @@ if (!isset($data['is_guest_checkout'])){
            
            <?php FunctionsV3::sectionHeader($header_2)?>
            <p class="spacer3"><?php echo $address;?></p>
-           
+		   
+		   <?php FunctionsV3::sectionHeader($header_3)?>
+           <p class="spacer3"><?php echo $address1;?></p>
+
+
+
            <?php FunctionsV3::sectionHeader('Payment Information')?>
                       
            <p>
            <?php 
            if (array_key_exists($data['payment_opt'],$paymentlist)){
-           	   switch ($data['payment_opt']) {
-           	   	case "cod":
-           	   		if ($data['delivery_type']=="pickup"){
-           	   			echo t("Cash On Pickup");
-           	   		} elseif ( $data['delivery_type']=="dinein" ) {
-         		           echo t("Pay in person");   	
-           	   		} else echo t($paymentlist[$data['payment_opt']]);
-           	   		break;
-           	   		
-           	   		case "pyr":
-           	   			if ($data['delivery_type']=="pickup"){
-           	   			   echo t("Pay On Pickup");
-           	   		    } else echo t($paymentlist[$data['payment_opt']]);
-           	   		break;
-           	   
-           	   	default:
-           	   		echo t($paymentlist[$data['payment_opt']]);
-           	   		break;
-           	   }
+               switch ($data['payment_opt']) {
+                case "cod":
+                  if ($data['delivery_type']=="pickup"){
+                    echo t("Cash On Pickup");
+                  } elseif ( $data['delivery_type']=="dinein" ) {
+                       echo t("Pay in person");     
+                  } else echo t($paymentlist[$data['payment_opt']]);
+                  break;
+                  
+                  case "pyr":
+                    if ($data['delivery_type']=="pickup"){
+                       echo t("Pay On Pickup");
+                      } else echo t($paymentlist[$data['payment_opt']]);
+                  break;
+               
+                default:
+                  echo t($paymentlist[$data['payment_opt']]);
+                  break;
+               }
            } else echo t($data['payment_opt']);
            
            switch ($data['payment_opt']) {
-           	case "cod":
-           		 if(!isset($data['order_change'])){
-           		 	$data['order_change']=0;
-           		 }
-           		 if ($data['order_change']>0){
-	           		 echo '<p class="text-muted text-small">'.t("change for").
-	           		 " ". FunctionsV3::prettyPrice($data['order_change']) .'</p>';
-           		 }
-           		 break;
-           	case "ocr":
-           		if ( $card_info=Yii::app()->functions->getCreditCardInfo($data['cc_id'])){
-           			echo "<p class=\"text-muted text-small\">".$card_info['card_name']."</p>";
-           			echo "<p class=\"text-muted text-small\">".
-           			Yii::app()->functions->maskCardnumber($card_info['credit_card_number'])."</p>";
-           		}
-           		break;
+            case "cod":
+               if(!isset($data['order_change'])){
+                $data['order_change']=0;
+               }
+               if ($data['order_change']>0){
+                 echo '<p class="text-muted text-small">'.t("change for").
+                 " ". FunctionsV3::prettyPrice($data['order_change']) .'</p>';
+               }
+               break;
+            case "ocr":
+              if ( $card_info=Yii::app()->functions->getCreditCardInfo($data['cc_id'])){
+                echo "<p class=\"text-muted text-small\">".$card_info['card_name']."</p>";
+                echo "<p class=\"text-muted text-small\">".
+                Yii::app()->functions->maskCardnumber($card_info['credit_card_number'])."</p>";
+              }
+              break;
            
-           	default:
-           		break;
+            default:
+              break;
            }
            ?>
            </p>
@@ -277,17 +353,17 @@ if (!isset($data['is_guest_checkout'])){
              <i class="order-icon your-order-icon"></i>
              
              <div class="order-list-wrap">   
-	       
-	           <p class="bold center"><?php echo t("Your Order")?></p>
-	           <div class="item-order-wrap"></div>
-	         
-	           <div class="text-center top25">
-	             <a href="javascript:;" class="place_order green-button medium inline block">
-	             <?php echo t("Confirm Order")?>
-	             </a>
-	           </div>
-	           
-	         </div> <!--order-list-wrap-->
+         
+             <p class="bold center"><?php echo t("Your Order")?></p>
+             <div class="item-order-wrap"></div>
+           
+             <div class="text-center top25">
+               <a href="javascript:;" class="place_order green-button medium inline block">
+               <?php echo t("Confirm Order")?>
+               </a>
+             </div>
+             
+           </div> <!--order-list-wrap-->
              
           </div> <!--box-grey sticky-div--> 
         

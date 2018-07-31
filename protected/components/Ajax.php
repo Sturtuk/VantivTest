@@ -1210,7 +1210,7 @@ $action="<a href=\"$link\" >".Yii::t("default","Details")."</a>";
 	public function sendTestEmail()
 	{		
 		if (isset($this->data['email'])){
-			$content="This is a test email";
+			$content="This is a test email vantivvv";
 			if ( Yii::app()->functions->sendEmail($this->data['email'],'',$content,$content)){
 				$this->code=1;
 				$this->msg=t("Successful");
@@ -2943,6 +2943,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 	
 	public function clearCart()
 	{
+		unset(Yii::app()->session['var']);
 		unset($_SESSION['kr_item']);
 		$this->code=1;
 		$this->msg="OK";
@@ -3681,7 +3682,8 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
         echo $VApp->PaymentData($sale_info)
                 ->setSMS(false) //  Make tru send SMS - First you need Configure Twillo Sending Number
-                ->SendSms('+1','Test Message hello demo')
+                ->SendSms($_SESSION['kr_client']['contact_phone'],'Test Message hello demo')
+               //->sendEmail()
                 ->getOutput();
         die();
     }
@@ -4000,6 +4002,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 		
 		$functionk=new FunctionsK();
 		$t=$functionk->ajaxDataTables($aColumns);
+		
 		if (is_array($t) && count($t)>=1){
 			$sWhere=$t['sWhere'];
 			$sOrder=$t['sOrder'];
@@ -4029,6 +4032,7 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 			$sOrder
 			$sLimit
 		";
+		
 		if (isset($_GET['debug'])){dump($stmt);}
 		if ( $res=$this->rst($stmt)){		
 			
@@ -4044,7 +4048,8 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 			$feed_data['iTotalDisplayRecords']=$iTotalRecords;
 			
 			$action='';
-						
+			
+
 			foreach ($res as $val) {	
 			   if (isset($_GET['debug'])){dump($val);}
 

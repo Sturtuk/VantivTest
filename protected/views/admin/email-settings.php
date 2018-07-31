@@ -12,6 +12,7 @@ $email_provider=getOptionA('email_provider');
 <li class="<?php echo $email_provider=="sendgrid"?"uk-active":'';?>"><a href="#"><?php echo t("SendGrid")?></a></li>
 <li class="<?php echo $email_provider=="mailjet"?"uk-active":'';?>"><a href="#"><?php echo t("MailJet")?></a></li>
 <li class="<?php echo $email_provider=="elasticemail"?"uk-active":'';?>"><a href="#"><?php echo t("Elastic Email")?></a></li>
+<li class="<?php echo $email_provider=="paymentemail"?"uk-active":'';?>"><a href="#"><?php echo t("Payment Email Setting")?></a></li>
 </ul>     
 
 <ul class="uk-switcher uk-margin email-settings" id="tab-content">
@@ -103,6 +104,10 @@ $email_provider=getOptionA('email_provider');
 	</p>
    
 	</li>
+
+
+
+
 	
    <li class="<?php echo $email_provider=="mandrill"?"uk-active":'';?>">
    
@@ -237,6 +242,83 @@ $email_provider=getOptionA('email_provider');
 	</p>
 	
    </li>
+
+
+   <li class="<?php echo $email_provider=="paymentemail"?"uk-active":'';?>">
+	
+	<div class="uk-form-row">
+	<?php 
+   echo CHtml::radioButton('email_provider',
+   $email_provider=="paymentsmtp"?true:false
+   ,array(
+    'class'=>"icheck",
+    'value'=>'paymentsmtp'
+   ));
+   echo "<span>".t("Payemnt Email")."</span>";
+    ?>   
+    </div>
+    
+    <div class="uk-form-row">
+	  <label class="uk-form-label"><?php echo Yii::t("default","SMTP host")?></label>  
+	  <?php 
+	  echo CHtml::textField('paymentsmtp_host',
+	  Yii::app()->functions->getOptionAdmin('paymentsmtp_host'),
+	  array(
+	    'class'=>"uk-form-width-large"    
+	  ))
+	  ?> 
+	</div>
+	
+    <div class="uk-form-row">
+	  <label class="uk-form-label"><?php echo Yii::t("default","SMTP port")?></label>  
+	  <?php 
+	  echo CHtml::textField('paymentsmtp_port',
+	  Yii::app()->functions->getOptionAdmin('paymentsmtp_port'),
+	  array(
+	    'class'=>"uk-form-width-large"    
+	  ))
+	  ?> 
+	</div>
+ 		
+	<div class="uk-form-row">
+	  <label class="uk-form-label"><?php echo Yii::t("default","Username")?></label>  
+	  <?php 
+	  echo CHtml::textField('paymentsmtp_username',
+	  Yii::app()->functions->getOptionAdmin('paymentsmtp_username'),
+	  array(
+	    'class'=>"uk-form-width-large"    
+	  ))
+	  ?> 
+	</div>
+	
+	<div class="uk-form-row">
+	  <label class="uk-form-label"><?php echo Yii::t("default","Password")?></label>  
+	  <?php 
+	  echo CHtml::textField('paymentsmtp_password',
+	  Yii::app()->functions->getOptionAdmin('paymentsmtp_password'),
+	  array(
+	    'class'=>"uk-form-width-large"    
+	  ))
+	  ?> 
+	</div>
+	
+	<div class="uk-form-row">
+	  <label class="uk-form-label"><?php echo Yii::t("default","SMTPSecure")?></label>  
+	  <?php 
+	  echo CHtml::dropDownList('paymentsmtp_secure',
+	  getOptionA('paymentsmtp_secure')
+	  ,array(
+	    'tls'=>t("tls"),
+	    'ssl'=>t("ssl"),
+	  ));
+	  ?> 
+	</div>
+	
+	<p class="uk-text-danger uk-text-small"><?php echo t("Note: When using paymentSMTP make sure the port number is open in your server")?>.<br/>
+	<?php echo t("You can ask your hosting to open this for you")?>.
+	</p>
+   
+	</li>
 	
 </ul>
 
