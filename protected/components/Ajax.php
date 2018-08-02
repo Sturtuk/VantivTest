@@ -3680,11 +3680,48 @@ $this->msg=t("We have sent bank information instruction to your email")." :$merc
 
 
 
-        echo $VApp->PaymentData($sale_info)
+        $data = $VApp->PaymentData($sale_info)
                 ->setSMS(false) //  Make tru send SMS - First you need Configure Twillo Sending Number
                 ->SendSms($_SESSION['kr_client']['contact_phone'],'Test Message hello demo')
                //->sendEmail()
                 ->getOutput();
+
+        $check = json_decode($data);
+
+
+
+        if($check->status == "000"){
+            $db_ext=new DbExt;
+            $params_logs=array(
+                'order_id'=>$check->OrderID,
+                'payment_type'=>"vnt",
+                'payment_reference'=>$check->transId,
+                'raw_response'=>$check->transId,
+                'date_created'=>FunctionsV3::dateNow(),
+                'ip_address'=>$_SERVER['REMOTE_ADDR']
+            );
+            $db_ext->insertData("{{payment_order}}",$params_logs);
+
+            $params_update=array(
+                'status'=>'paid'
+            );
+            $db_ext->updateData("{{order}}",$params_update,'order_id',$check->OrderID);
+
+            /*POINTS PROGRAM*/
+            if (FunctionsV3::hasModuleAddon("pointsprogram")){
+                PointsProgram::updatePoints($check->OrderID);
+            }
+
+            /*Driver app*/
+            if (FunctionsV3::hasModuleAddon("driver")){
+                Yii::app()->setImport(array(
+                    'application.modules.driver.components.*',
+                ));
+                Driver::addToTask($check->OrderID);
+            }
+        }
+
+        echo $data;
         die();
     }
 
